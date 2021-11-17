@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/518dea5592.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>W.J's Portfolio</title>
+  </head>
+  <body>
+    <section class="intro-wraper">
+      <div class="intro">
+        <video autoplay control loop class="bgv">
+          <source src="./assets/Ocean.mp4" type="video/mp4">
+          웹브라우저가 video를 실행하는데 적합하지 않습니다.
+        </video>
+        <div class="hello">
+          <div class="hello-paragraph-list">
+            <p class="hello-paragraph-list-item">만나서 너무 반갑습니다!</p>
+            <p class="hello-paragraph-list-item">클릭해 주셔서 감사합니다!</p>
+          </div>
+        </div>
+        <div class="items">
+          <ul class="items-list">
+            <li class="items-list-item">
+              <i class="fas fa-fire"></i>
+              <h1>열정있는 사람과의 만남</h1>
+            </li>
+            <li class="items-list-item">
+              <i class="fas fa-list"></i>
+              <h1>셀프 디자인 및 클론 코딩</h1>
+            </li>
+            <li class="items-list-item">
+              <i class="fas fa-download"></i>
+              <h1>회사에 저장해야할 인재</h1>
+            </li>
+          </ul>
+        </div>
+        <div class="Chrome">※ 본 웹사이트는 구글 Chrome 브라우저에 최적화 되어 있습니다.</div>
+      </div>
+    </section>
+    <div class="main-wraper">
+      <header class="header">
+        <a href="" class="UpToHeader"> W.J's Portfolio </a>
+        <ul class="menu-list">
+          <li class="menu-list-item"><a href="#"> ABOUT </a></li>
+          <li class="menu-list-item"><a href="#"> SKILL </a></li>
+          <li class="menu-list-item"><a href="#"> WORK </a></li>
+          <li class="menu-list-item"><a href="#"> CONTACT </a></li>
+        </ul>
+      </header>
+      <section class="section-notice">
+        <span id="section-notice">ABOUT</span>
+      </section>
+      <section class="self-introduction">
+        <img src="./assets/profile.jpg" alt="프로필사진" />
+        <div class="paragraph">
+          <h2>안녕하세요! 저는</h2>
+          <h1 class="paragraph-title">늦바람 탄 '여원준'입니다.</h1>
+          <div class="paragraph-division"></div>
+          <p class="paragraph-desc">
+            안녕하세요 저는 '여원준' 입니다. 여기에 짤막한 소개를 할거에요. 1분
+            자기소개 같은 느낌으로
+          </p>
+        </div>
+      </section>
+      <section class="skill">
+        <ul class="skill-list">
+          <li class="skill-list-item">
+            <h1 class="skill-list-item-title" id="list-show-1">HTML</h1>
+            <p class="skill-list-item-desc">시멘틱한 태그를 적절한 쓰임새에 맞게 사용하여 웹표준을 준수한 시낸틱 마크업을 작성합니다.<br/>검색엔진최적화(SEO)에 대한 이해를 통해 사용자들의 접근성을 높일 수 있습니다.</p>
+          </li>
+          <li class="skill-list-item">
+            <h1 class="skill-list-item-title"  id="list-show-2">CSS</h1>
+            <p class="skill-list-item-desc">float, position의 적절한 활용을 통한 레이아웃 형성 뿐만아니라, 최신트렌드 flex, grid에 대한 이해와 활용이 가능합니다.<br/>부트스트랩을 활용하여 반응형 레이아웃을 적용합니다.</p>
+          </li>
+          <li class="skill-list-item">
+            <h1 class="skill-list-item-title" id="list-show-3">JQUERY & JS</h1>
+            <p class="skill-list-item-desc">동적요소를 위해 JQuery를 주로 활용하며, 다양한 애니메이션 기능을 구현합니다.<br/>JQuery로 구현이 힘들거나 복잡할 경우, JavaScript를 활용하여 구현하고 공부합니다.</p>
+          </li>
+          <li class="skill-list-item">
+            <h1 class="skill-list-item-title" id="list-show-4">CO-WORK</h1>
+            <p class="skill-list-item-desc">디자인 기획의도에 100% 맞도록 구현하고자 노력합니다.<br/>반응형, 인터렉션 등 사용자에게 편안 UI/UX를 생각하며 항상 고민합니다.<br/>협업을 위한 업무 프로세스를 준수하며 지식을 배우고 공유하고자 합니다.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="banner">
+        <div class="appeal">
+          <p class="appeal-desc">작업물을 봐달라고 어필하는 공간입니다.</br>
+          asdasd</p>
+        </div>
+        <h1 class="banner-title">
+          <i class="far fa-play-circle"></i>Coding Player
+        </h1>
+        <p class="banner-desc">
+          Coding Player를 이용해서 '여원준' 지원자의 작업물을 확인하세요
+        </p>
+        <button class="banner-link" id="banner-link">Click to Play</button>
+      </section>
+      <section class="player" id="player">
+        <div class="player-main" id="player-main">
+          <button type="button" class="player-close" id="player-close">
+            <i class="fas fa-window-close"></i>
+          </button>
+  
+          <div class="player-slide">
+            <div class="player-slide-box">
+              <div class="slide-img-box" id="slide-img-box">
+                <img
+                  src="./assets/coding-player-list-1.png"
+                  alt=""
+                  class="slide-img-1"
+                  id="slide-img-1"
+                />
+                <img
+                  src="./assets/coding-player-list-2.png"
+                  alt=""
+                  class="slide-img-2"
+                  id="slide-img-2"
+                />
+                <img
+                  src="./assets/slide-img-3.jpg"
+                  alt=""
+                  class="slide-img-3"
+                  id="slide-img-3"
+                />
+                <img
+                  src="./assets/slide-img-4.jpg"
+                  alt=""
+                  class="slide-img-4"
+                  id="slide-img-4"
+                />
+              </div>
+            </div>
+            <div class="player-operater">
+              <div class="operater-icon-list">
+                <ul class="operater-icon-list-box">
+                  <li class="operater-icon-list-end" id="slide-start-bt">
+                    <button><i class="fas fa-step-backward"></i></button>
+                  </li>
+                  <li class="operater-icon-list-side" id="slide-before-bt">
+                    <button><i class="fas fa-backward"></i></button>
+                  </li>
+                  <li class="operater-icon-list-play">
+                    <button>
+                      <a href="#"><i class="fas fa-play"></i></a>
+                    </button>
+                  </li>
+                  <li class="operater-icon-list-side" id="slide-after-bt">
+                    <button><i class="fas fa-forward"></i></button>
+                  </li>
+                  <li class="operater-icon-list-end" id="slide-end-bt">
+                    <button><i class="fas fa-step-forward"></i></button>
+                  </li>
+                </ul>
+                <ul class="operater-icon-list-desc-box">
+                  <li>Back</li>
+                  <li>Rewind</li>
+                  <li>Play</li>
+                  <li>Forward</li>
+                  <li>Skip</li>
+                </ul>
+                <div class="player-operater-state">
+                  <div
+                    class="player-operater-state-bar"
+                    id="player-operater-state-bar"
+                  ></div>
+                </div>
+                <div class="player-operater-time">
+                  <span id="play-time">0:57</span>
+                  <span>3:48</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="player-desc-slide">
+            <div class="player-desc-box">
+              <ul class="slide-desc-box" id="slide-desc-box">
+                <li class="slide-desc-lsit">
+                  <h1 class="slide-desc-lsit-title">IKEA KOREA</h1>
+                  <ul class="slide-desc-lsit-desc">
+                    <li>제작기간 : 2주</li>
+                    <li>디자인 : CLONE</li>
+                    <li>사용기술 : HTML, CSS</li>
+                    <li>
+                      설명 : HTML, CSS 공부 후 처음으로 해본 클론 코딩 홈페이지
+                    </li>
+                    <li class="detail-info-button">
+                      <button type="button"><a href="#">자세히 보기</a></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="slide-desc-lsit">
+                  <h1 class="slide-desc-lsit-title">W.J Coffee</h1>
+                  <ul class="slide-desc-lsit-desc">
+                    <li>제작기간 : 2주</li>
+                    <li>디자인 : self-production</li>
+                    <li>사용기술 : HTML, CSS, JS</li>
+                    <li>
+                      설명 : HTML, CSS 공부 후 처음으로 해본 자체 디자인 코딩
+                      홈페이지
+                    </li>
+                    <li class="detail-info-button">
+                      <button type="button"><a href="#">자세히 보기</a></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="slide-desc-lsit">
+                  <h1 class="slide-desc-lsit-title">on the drawing board</h1>
+                  <ul class="slide-desc-lsit-desc">
+                    <li>제작기간 : 2주</li>
+                    <li>디자인 : clone</li>
+                    <li>사용기술 : HTML, CSS, JS, JQuery</li>
+                    <li>설명 : JQuery 적용 첫 홈페이지</li>
+                    <li class="detail-info-button">
+                      <button type="button"><a href="#">자세히 보기</a></button>
+                    </li>
+                  </ul>
+                </li>
+                <li class="slide-desc-lsit">
+                  <h1 class="slide-desc-lsit-title">on the drawing board 2</h1>
+                  <ul class="slide-desc-lsit-desc">
+                    <li>제작기간 : 2주</li>
+                    <li>디자인 : CLONE</li>
+                    <li>사용기술 : HTML, CSS, JS, JQuery</li>
+                    <li>설명 : JQuery 적용 첫 홈페이지</li>
+                    <li class="detail-info-button">
+                      <button type="button"><a href="#">자세히 보기</a></button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <h1 class="footer-title">
+          Do you have any other questions?<br />
+          Ask directly with the information on the right.
+        </h1>
+        <div class="footer-info">
+          <div class="footer-info-paragraph">
+            Name : Wonjun Yeo<br />
+            Address : 미정<br />
+            E-mail : rbgh004@naver.com<br />
+            tele : 010-9033-6633
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() < 700 ) {
+          $('#section-notice').html('ABOUT');
+          $('#section-notice').css('top', '12.5vh')
+          $('#section-notice').css('color', "#111")
+        } else if ($(window).scrollTop() >= 700 && $(window).scrollTop() < 1400) {
+          $('#section-notice').html('SKILL');
+          $('#section-notice').css('top', '35vh');
+          $('#section-notice').css('color', "#111")
+        } else if ($(window).scrollTop() >= 1400 && $(window).scrollTop() < 1800) {
+          $('#section-notice').html('WORK');
+          $('#section-notice').css('top', '57.5vh');
+          $('#section-notice').css('color', "#fff")
+        } else {
+          $('#section-notice').html('CONTACT');
+          $('#section-notice').css('top', '80vh');
+          $('#section-notice').css('color', "#111")
+        }
+      });
+
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 100 ) {
+          $('.UpToHeader').html('W.J');
+          $('.UpToHeader').addClass('active');
+          $('.header').addClass('active');
+        } else if ($(window).scrollTop() < 100) {
+          $('.UpToHeader').html("W.J's Portfolio");
+          $('.UpToHeader').removeClass('active')
+          $('.header').removeClass('active')
+        }
+      });
+
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 300 ) {
+          $('#list-show-1').addClass('active');
+        } else if ($(window).scrollTop() < 300) {
+          $('#list-show-1').removeClass('active')
+        }
+      })
+
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 500 ) {
+          $('#list-show-2').addClass('active');
+        } else if ($(window).scrollTop() < 500) {
+          $('#list-show-2').removeClass('active')
+        }
+      });
+
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 700 ) {
+          $('#list-show-3').addClass('active');
+        } else if ($(window).scrollTop() < 700) {
+          $('#list-show-3').removeClass('active')
+        }
+      });
+
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() > 900 ) {
+          $('#list-show-4').addClass('active');
+        } else if ($(window).scrollTop() < 900) {
+          $('#list-show-4').removeClass('active')
+        }
+      });
+      
+
+      $("#banner-link").on("click", function () {
+        $("#player").fadeIn();
+      });
+
+      $("#player-close").on("click", function () {
+        $("#player").fadeOut();
+      });
+
+      var NowPicture = 1;
+
+      $("#slide-after-bt").click(function () {
+        if (NowPicture == 1) {
+          $("#slide-img-box").css("transform", "translateX(-25%)");
+          $("#slide-desc-box").css("transform", "translateX(-25%)");
+          $("#player-operater-state-bar").css("width", "50%");
+          $("#play-time").html("1:54");
+          NowPicture = 2;
+        } else if (NowPicture == 2) {
+          $("#slide-img-box").css("transform", "translateX(-50%)");
+          $("#slide-desc-box").css("transform", "translateX(-50%)");
+          $("#player-operater-state-bar").css("width", "75%");
+          $("#play-time").html("2:51");
+          NowPicture = 3;
+        } else if (NowPicture == 3) {
+          $("#slide-img-box").css("transform", "translateX(-75%)");
+          $("#slide-desc-box").css("transform", "translateX(-75%)");
+          $("#player-operater-state-bar").css("width", "100%");
+          $("#play-time").html("3:48");
+          NowPicture = 4;
+        } else if (NowPicture == 4) {
+          $("#slide-img-box").css("transform", "translateX(0)");
+          $("#slide-desc-box").css("transform", "translateX(0)");
+          $("#player-operater-state-bar").css("width", "25%");
+          $("#play-time").html("0:57");
+          NowPicture = 1;
+        }
+      });
+
+      $("#slide-before-bt").click(function () {
+        if (NowPicture == 1) {
+          $("#slide-img-box").css("transform", "translateX(-75%)");
+          $("#slide-desc-box").css("transform", "translateX(-75%)");
+          $("#player-operater-state-bar").css("width", "100%");
+          $("#play-time").html("3:48");
+          NowPicture = 4;
+        } else if (NowPicture == 2) {
+          $("#slide-img-box").css("transform", "translateX(0)");
+          $("#slide-desc-box").css("transform", "translateX(0)");
+          $("#player-operater-state-bar").css("width", "25%");
+          $("#play-time").html("0:57");
+          NowPicture = 1;
+        } else if (NowPicture == 3) {
+          $("#slide-img-box").css("transform", "translateX(-25%)");
+          $("#slide-desc-box").css("transform", "translateX(-25%)");
+          $("#player-operater-state-bar").css("width", "50%");
+          $("#play-time").html("1:54");
+          NowPicture = 2;
+        } else if (NowPicture == 4) {
+          $("#slide-img-box").css("transform", "translateX(-50%)");
+          $("#slide-desc-box").css("transform", "translateX(-50%)");
+          $("#player-operater-state-bar").css("width", "75%");
+          $("#play-time").html("2:51");
+          NowPicture = 3;
+        }
+      });
+
+      $("#slide-start-bt").click(function () {
+        $("#slide-img-box").css("transform", "translateX(0)");
+        $("#slide-desc-box").css("transform", "translateX(0)");
+        $("#player-operater-state-bar").css("width", "90px");
+        $("#play-time").html("0:57");
+      });
+
+      $("#slide-end-bt").click(function () {
+        $("#slide-img-box").css("transform", "translateX(-75%)");
+        $("#slide-desc-box").css("transform", "translateX(-75%)");
+        $("#player-operater-state-bar").css("width", "100%");
+        $("#play-time").html("3:48");
+      });
+    </script>
+  </body>
+</html>
