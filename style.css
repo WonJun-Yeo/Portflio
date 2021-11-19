@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
   color: inherit;
   font-family: "Noto Sans", sans-serif;
   word-break: keep-all;
@@ -9,6 +11,25 @@
 body {
   position: relative;
   background-color: #bcdae7;
+}
+
+body::-webkit-scrollbar {
+  border-radius: 64px;
+  width: 5px;
+}
+
+body:hover::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6b799e;
+  border-radius: 64px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #8a8a8a;
+  border-radius: 64px;
 }
 
 ul,
@@ -208,6 +229,7 @@ textarea:active {
 }
 
 .main-wraper {
+  position: relative;
   width: 100%;
   max-width: 1900px;
   height: 100%;
@@ -262,6 +284,8 @@ textarea:active {
   width: 100%;
   max-width: 1900px;
   margin: 0 auto;
+  color: #fca70a;
+  font-weight: 700;
 }
 
 .section-notice span {
@@ -280,7 +304,7 @@ textarea:active {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 180px 30px 100px;
+  padding: 180px 30px 30px;
 }
 
 .self-introduction img {
@@ -290,17 +314,51 @@ textarea:active {
 }
 
 .paragraph {
+  width: 60%;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
-  width: 60%;
-  padding: 50px 80px;
+  padding: 0 80px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #fca70a;
+  }
+}
+
+.typing {
+  width: fit-content;
+}
+
+.typing p {
+  width: 0;
+  font-size: 4rem;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 5px;
+  border-right: 5px solid #fca70a;
+  white-space: nowrap;
+  animation: typing 1s steps(15, end) forwards, blink 0.8s infinite;
 }
 
 .paragraph-title {
   width: 100%;
   font-size: 5rem;
 }
+
 @keyframes division {
   0% {
     widht: 0;
@@ -337,6 +395,10 @@ textarea:active {
   padding: 30px;
 }
 
+.skill-title {
+  margin-bottom: 15px;
+}
+
 .skill-list {
   width: 100%;
   height: auto;
@@ -344,20 +406,26 @@ textarea:active {
 
 .skill-list-item {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   line-height: 1.5;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .skill-list-item-title {
-  width: 30%;
+  width: 40%;
   font-size: 3rem;
   padding: 10px 0 10px 60px;
-  border-left: 5px solid #ebc57c;
-  border-radius: 64px;
   opacity: 0;
   transition: all 1s ease;
+  overflow: hidden;
+}
+
+.skill-list-item-title p {
+  position: relative;
+  width: fit-content;
+  white-space: nowrap;
 }
 
 .skill-list-item-title.active {
@@ -366,8 +434,23 @@ textarea:active {
 }
 
 .skill-list-item-desc {
-  width: 70%;
+  width: 60%;
+  padding: 0 80px;
   font-size: 1rem;
+}
+
+.highlight {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 0;
+  height: 15px;
+  background-color: rgba(252, 167, 10, 0.4);
+  transition: all 500ms ease;
+}
+
+.skill-list-item:hover .highlight {
+  width: 100%;
 }
 
 /* banner */
@@ -375,20 +458,56 @@ textarea:active {
 .banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  height: 800px;
-  max-width: 1500px;
+  max-width: 1900px;
+  padding: 30px;
   margin: 0 auto;
-  color: #fff;
-  background-color: #111;
+  color: #111;
 }
 
 .appeal {
   width: 100%;
-  background-color: #fff;
   color: #111;
+}
+
+.banner-header-img {
+  width: 100%;
+  height: 200px;
+  background-image: url(./assets/banner-header-img-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banner-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 30px;
+}
+
+.banner-manual {
+  width: 40%;
+}
+
+.banner-manual-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.banner-paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  padding: 0 80px;
 }
 
 .banner-title {
@@ -410,15 +529,32 @@ textarea:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 50px;
-  background-color: rgb(211, 95, 17);
+  width: fit-content;
+  padding: 15px 30px;
+  background-color: #fca70a;
   border-radius: 8px;
+}
+
+.banner-link .fa-compact-disc {
+  font-size: 1.5rem;
+  margin-right: 15px;
   transition: all 250ms ease-in-out;
 }
 
-.banner-link:hover {
-  font-size: 18px;
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.banner-link:hover .fa-compact-disc {
+  animation-name: rotate;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 /* player */
@@ -428,6 +564,7 @@ textarea:active {
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 1900px;
   height: 100%;
   margin: 0 auto;
   color: #111;
@@ -698,22 +835,23 @@ footer {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1900px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
   padding: 60px;
   margin: 0 auto;
-  color: #111;
-  background-color: #fff;
+
+  background-color: rgba(107, 121, 158, 0.5);
 }
 
 .footer-title {
   width: 50%;
-  font-size: 20px;
   text-align: center;
 }
 
 .footer-info {
   width: 50%;
-  font-size: 18px;
 }
 
 .footer-info-paragraph {

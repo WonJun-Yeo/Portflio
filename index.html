@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/518dea5592.js"
@@ -18,10 +21,9 @@
     <title>W.J's Portfolio</title>
   </head>
   <body>
-    <section class="intro-wraper">
+    <!-- <section class="intro-wraper">
       <div class="intro">
-        <video autoplay control loop class="bgv">
-          <source src="./assets/Ocean.mp4" type="video/mp4">
+        <video src="./assets/Ocean.mp4" loop autoplay class="bgv">
           웹브라우저가 video를 실행하는데 적합하지 않습니다.
         </video>
         <div class="hello">
@@ -46,27 +48,30 @@
             </li>
           </ul>
         </div>
-        <div class="Chrome">※ 본 웹사이트는 구글 Chrome 브라우저에 최적화 되어 있습니다.</div>
+        <div class="Chrome">
+          ※ 본 웹사이트는 구글 Chrome 브라우저에 최적화 되어 있습니다.
+        </div>
       </div>
-    </section>
+    </section> -->
     <div class="main-wraper">
       <header class="header">
-        <a href="" class="UpToHeader"> W.J's Portfolio </a>
+        <a href="#ABOUT" class="UpToHeader"> W.J's Portfolio </a>
         <ul class="menu-list">
-          <li class="menu-list-item"><a href="#"> ABOUT </a></li>
-          <li class="menu-list-item"><a href="#"> SKILL </a></li>
-          <li class="menu-list-item"><a href="#"> WORK </a></li>
-          <li class="menu-list-item"><a href="#"> CONTACT </a></li>
+          <li class="menu-list-item"><a href="#ABOUT">ABOUT</a></li>
+          <li class="menu-list-item"><a href="#SKILL">SKILL</a></li>
+          <li class="menu-list-item"><a href="#WORK">WORK</a></li>
+          <li class="menu-list-item"><a href="#CONTACT">CONTACT</a></li>
         </ul>
       </header>
       <section class="section-notice">
         <span id="section-notice">ABOUT</span>
       </section>
-      <section class="self-introduction">
+      <section class="self-introduction" id="ABOUT">
         <img src="./assets/profile.jpg" alt="프로필사진" />
         <div class="paragraph">
           <h2>안녕하세요! 저는</h2>
-          <h1 class="paragraph-title">늦바람 탄 '여원준'입니다.</h1>
+          <span class="typing"><p>늦바람 든</p></span>
+          <h1 class="paragraph-title">'여원준'입니다.</h1>
           <div class="paragraph-division"></div>
           <p class="paragraph-desc">
             안녕하세요 저는 '여원준' 입니다. 여기에 짤막한 소개를 할거에요. 1분
@@ -74,45 +79,91 @@
           </p>
         </div>
       </section>
-      <section class="skill">
+      <section class="skill" id="SKILL">
+        <h1 class="skill-title">
+          저는 이런 것들을 잘하고 발전을 위해 계속 공부 중입니다.
+        </h1>
         <ul class="skill-list">
           <li class="skill-list-item">
-            <h1 class="skill-list-item-title" id="list-show-1">HTML</h1>
-            <p class="skill-list-item-desc">시멘틱한 태그를 적절한 쓰임새에 맞게 사용하여 웹표준을 준수한 시낸틱 마크업을 작성합니다.<br/>검색엔진최적화(SEO)에 대한 이해를 통해 사용자들의 접근성을 높일 수 있습니다.</p>
+            <h1 class="skill-list-item-title" id="list-show-1">
+              <p>HTML<span class="highlight"></span></p>
+            </h1>
+            <p class="skill-list-item-desc">
+              시멘틱한 태그를 적절한 쓰임새에 맞게 사용하여 웹표준을 준수한
+              시낸틱 마크업을 작성합니다.<br />검색엔진최적화(SEO)에 대한 이해를
+              통해 사용자들의 접근성을 높일 수 있습니다.
+            </p>
           </li>
           <li class="skill-list-item">
-            <h1 class="skill-list-item-title"  id="list-show-2">CSS</h1>
-            <p class="skill-list-item-desc">float, position의 적절한 활용을 통한 레이아웃 형성 뿐만아니라, 최신트렌드 flex, grid에 대한 이해와 활용이 가능합니다.<br/>부트스트랩을 활용하여 반응형 레이아웃을 적용합니다.</p>
+            <h1 class="skill-list-item-title" id="list-show-2">
+              <p>CSS &amp; SCSS<span class="highlight"></span></p>
+            </h1>
+            <p class="skill-list-item-desc">
+              float, position의 적절한 활용을 통한 레이아웃 형성 뿐만아니라,
+              최신트렌드 flex, grid에 대한 이해와 활용이 가능합니다.<br />부트스트랩을
+              활용하여 반응형 레이아웃을 적용합니다.
+            </p>
           </li>
           <li class="skill-list-item">
-            <h1 class="skill-list-item-title" id="list-show-3">JQUERY & JS</h1>
-            <p class="skill-list-item-desc">동적요소를 위해 JQuery를 주로 활용하며, 다양한 애니메이션 기능을 구현합니다.<br/>JQuery로 구현이 힘들거나 복잡할 경우, JavaScript를 활용하여 구현하고 공부합니다.</p>
+            <h1 class="skill-list-item-title" id="list-show-3">
+              <p>JQuery &amp; JS<span class="highlight"></span></p>
+            </h1>
+            <p class="skill-list-item-desc">
+              동적요소를 위해 JQuery를 주로 활용하며, 다양한 애니메이션 기능을
+              구현합니다.<br />JQuery로 구현이 힘들거나 복잡할 경우,
+              JavaScript를 활용하여 구현하고 공부합니다.
+            </p>
           </li>
           <li class="skill-list-item">
-            <h1 class="skill-list-item-title" id="list-show-4">CO-WORK</h1>
-            <p class="skill-list-item-desc">디자인 기획의도에 100% 맞도록 구현하고자 노력합니다.<br/>반응형, 인터렉션 등 사용자에게 편안 UI/UX를 생각하며 항상 고민합니다.<br/>협업을 위한 업무 프로세스를 준수하며 지식을 배우고 공유하고자 합니다.</p>
+            <h1 class="skill-list-item-title" id="list-show-4">
+              <p>CO-WORK<span class="highlight"></span></p>
+            </h1>
+            <p class="skill-list-item-desc">
+              디자인 기획의도에 100% 맞도록 구현하고자 노력합니다.<br />반응형,
+              인터렉션 등 사용자에게 편안 UI/UX를 생각하며 항상 고민합니다.<br />협업을
+              위한 업무 프로세스를 준수하며 지식을 배우고 공유하고자 합니다.
+            </p>
           </li>
         </ul>
       </section>
-      <section class="banner">
+      <section class="banner" id="WORK">
         <div class="appeal">
-          <p class="appeal-desc">작업물을 봐달라고 어필하는 공간입니다.</br>
-          asdasd</p>
+          <p class="appeal-desc">작업물을 봐달라고 어필하는 공간입니다.</p>
         </div>
-        <h1 class="banner-title">
-          <i class="far fa-play-circle"></i>Coding Player
-        </h1>
-        <p class="banner-desc">
-          Coding Player를 이용해서 '여원준' 지원자의 작업물을 확인하세요
-        </p>
-        <button class="banner-link" id="banner-link">Click to Play</button>
+        <div class="banner-header-img"></div>
+        <div class="banner-main">
+          <div class="banner-manual">
+            <ol class="banner-manual-list">
+              <li class="banner-manual-list-item">
+                Click to Play 버튼을 클릭해 Coding Player 를 실행해 주세요.
+              </li>
+              <li class="banner-manual-list-item">
+                next 와 before 버튼을 클릭해 보고싶은 홈페이지를 선택하세요.
+              </li>
+              <li class="banner-manual-list-item">간단한 설명을 읽어주세요.</li>
+              <li class="banner-manual-list-item">
+                Play 버튼을 클릭해 홈페이지를 열어 구경하세요.
+              </li>
+            </ol>
+          </div>
+          <div class="banner-paragraph">
+            <h1 class="banner-title">
+              <i class="far fa-play-circle"></i>Coding Player
+            </h1>
+            <p class="banner-desc">
+              Coding Player를 이용해서 '여원준' 지원자의 작업물을 확인하세요
+            </p>
+            <button class="banner-link" id="banner-link">
+              <i class="fas fa-compact-disc"></i>Click to Play
+            </button>
+          </div>
+        </div>
       </section>
       <section class="player" id="player">
         <div class="player-main" id="player-main">
           <button type="button" class="player-close" id="player-close">
             <i class="fas fa-window-close"></i>
           </button>
-  
           <div class="player-slide">
             <div class="player-slide-box">
               <div class="slide-img-box" id="slide-img-box">
@@ -244,7 +295,7 @@
           </div>
         </div>
       </section>
-      <footer>
+      <footer id="CONTACT">
         <h1 class="footer-title">
           Do you have any other questions?<br />
           Ask directly with the information on the right.
@@ -260,71 +311,71 @@
       </footer>
     </div>
     <script>
-
-      $(window).on("scroll", function() {
-        if ($(window).scrollTop() < 700 ) {
-          $('#section-notice').html('ABOUT');
-          $('#section-notice').css('top', '12.5vh')
-          $('#section-notice').css('color', "#111")
-        } else if ($(window).scrollTop() >= 700 && $(window).scrollTop() < 1400) {
-          $('#section-notice').html('SKILL');
-          $('#section-notice').css('top', '35vh');
-          $('#section-notice').css('color', "#111")
-        } else if ($(window).scrollTop() >= 1400 && $(window).scrollTop() < 1800) {
-          $('#section-notice').html('WORK');
-          $('#section-notice').css('top', '57.5vh');
-          $('#section-notice').css('color', "#fff")
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() < 700) {
+          $("#section-notice").html("ABOUT");
+          $("#section-notice").css("top", "12.5vh");
+        } else if (
+          $(window).scrollTop() >= 700 &&
+          $(window).scrollTop() < 1400
+        ) {
+          $("#section-notice").html("SKILL");
+          $("#section-notice").css("top", "35vh");
+        } else if (
+          $(window).scrollTop() >= 1400 &&
+          $(window).scrollTop() < 1800
+        ) {
+          $("#section-notice").html("WORK");
+          $("#section-notice").css("top", "57.5vh");
         } else {
-          $('#section-notice').html('CONTACT');
-          $('#section-notice').css('top', '80vh');
-          $('#section-notice').css('color', "#111")
+          $("#section-notice").html("CONTACT");
+          $("#section-notice").css("top", "80vh");
         }
       });
 
-      $(window).on("scroll", function() {
-        if ($(window).scrollTop() > 100 ) {
-          $('.UpToHeader').html('W.J');
-          $('.UpToHeader').addClass('active');
-          $('.header').addClass('active');
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 100) {
+          $(".UpToHeader").html("W.J");
+          $(".UpToHeader").addClass("active");
+          $(".header").addClass("active");
         } else if ($(window).scrollTop() < 100) {
-          $('.UpToHeader').html("W.J's Portfolio");
-          $('.UpToHeader').removeClass('active')
-          $('.header').removeClass('active')
+          $(".UpToHeader").html("W.J's Portfolio");
+          $(".UpToHeader").removeClass("active");
+          $(".header").removeClass("active");
         }
       });
 
-      $(window).on("scroll", function() {
-        if ($(window).scrollTop() > 300 ) {
-          $('#list-show-1').addClass('active');
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 300) {
+          $("#list-show-1").addClass("active");
         } else if ($(window).scrollTop() < 300) {
-          $('#list-show-1').removeClass('active')
+          $("#list-show-1").removeClass("active");
         }
-      })
+      });
 
-      $(window).on("scroll", function() {
-        if ($(window).scrollTop() > 500 ) {
-          $('#list-show-2').addClass('active');
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 500) {
+          $("#list-show-2").addClass("active");
         } else if ($(window).scrollTop() < 500) {
-          $('#list-show-2').removeClass('active')
+          $("#list-show-2").removeClass("active");
         }
       });
 
-      $(window).on("scroll", function() {
-        if ($(window).scrollTop() > 700 ) {
-          $('#list-show-3').addClass('active');
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 700) {
+          $("#list-show-3").addClass("active");
         } else if ($(window).scrollTop() < 700) {
-          $('#list-show-3').removeClass('active')
+          $("#list-show-3").removeClass("active");
         }
       });
 
-      $(window).on("scroll", function() {
-        if ($(window).scrollTop() > 900 ) {
-          $('#list-show-4').addClass('active');
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 900) {
+          $("#list-show-4").addClass("active");
         } else if ($(window).scrollTop() < 900) {
-          $('#list-show-4').removeClass('active')
+          $("#list-show-4").removeClass("active");
         }
       });
-      
 
       $("#banner-link").on("click", function () {
         $("#player").fadeIn();
