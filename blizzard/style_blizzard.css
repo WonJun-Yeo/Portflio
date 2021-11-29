@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  font-family: "Noto Sans", sans-serif;
+  word-break: keep-all;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  height: 2000px;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  background-color: inherit;
+  border: none;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+/* nav */
+
+.nav {
+  width: 100%;
+}
+
+.nav-box {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.nav-logo-img {
+  width: 150px;
+}
+
+/* banner */
+
+.banner {
+  width: 100%;
+}
+
+.banner-box {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner-list {
+  width: 500%;
+  transition: all 500ms ease;
+}
+
+.banner-list-item {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 514px;
+}
+
+.banner-list-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-desc {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.banner-desc img {
+  width: 260px;
+  margin-bottom: 20px;
+}
+
+.banner-desc p {
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.banner-desc-bt {
+  font-size: 1rem;
+  color: #fff;
+  background-color: #006fb2;
+  padding: 10px 50px;
+  border: 1px solid #00aeff;
+  transition: all 250ms ease;
+}
+
+.banner-desc-bt:hover {
+  background-color: #00aeff;
+}
+
+.banner-before-bt {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  color: #fff;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+
+.banner-after-bt {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  color: #fff;
+  font-size: 2rem;
+  transform: translateY(-50%);
+}
+
+.banner-now-bt {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 200px;
+  transform: translateX(-50%);
+}
+
+.banner-now-bt-list {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.banner-now-bt-list:nth-child(0) {
+  background-color: #006fb2;
+}
