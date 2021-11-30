@@ -112,20 +112,18 @@ textarea:active {
 
 .banner-desc {
   position: absolute;
-  top: 50%;
-  left: 60px;
-  transform: translateY(-50%);
+  left: 120px;
+  bottom: 80px;
   color: #fff;
 }
 
 .banner-desc img {
   width: 260px;
-  margin-bottom: 20px;
 }
 
 .banner-desc p {
   font-size: 4rem;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .banner-desc-bt {
@@ -163,19 +161,126 @@ textarea:active {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  left: 50%;
-  bottom: 10px;
-  width: 200px;
-  transform: translateX(-50%);
+  left: 120px;
+  bottom: 20px;
+  width: 166px;
 }
 
 .banner-now-bt-list {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #fff;
+  color: #fff;
+  background-color: #006fb2;
 }
 
 .banner-now-bt-list:nth-child(0) {
-  background-color: #006fb2;
+  background-color: #00aeff;
+}
+
+/* game */
+
+.game {
+  width: 100%;
+}
+
+.game-box {
+  width: 100%;
+  max-width: 1800px;
+  background-image: url(./assets/game-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.col-6 {
+  height: 500px;
+}
+
+.col-6:nth-child(1) {
+  background-image: url(./assets/game-dia3-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col-6:nth-child(2) {
+  background-image: url(./assets/game-dia4-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(3) {
+  background-image: url(./assets/game-diaIM-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(4) {
+  background-image: url(./assets/game-diaR-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(5) {
+  background-image: url(./assets/game-HOS-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(6) {
+  background-image: url(./assets/game-HS-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(7) {
+  background-image: url(./assets/game-over1-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(8) {
+  background-image: url(./assets/game-over2-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(9) {
+  background-image: url(./assets/game-SC1-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(10) {
+  background-image: url(./assets/game-SC2-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(11) {
+  background-image: url(./assets/game-WC3-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col-6:nth-child(12) {
+  background-image: url(./assets/game-WOW-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col-6:nth-child(13) {
+  background-image: url(./assets/game-ACC-img.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
