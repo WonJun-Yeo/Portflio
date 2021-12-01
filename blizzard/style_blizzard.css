@@ -58,6 +58,7 @@ textarea:active {
   max-width: 1800px;
   height: 120px;
   margin: 0 auto;
+  background-color: #111;
 }
 
 .nav-list {
@@ -65,13 +66,22 @@ textarea:active {
   top: 0;
   width: 100%;
   max-width: 1800px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.5rem;
-  padding: 10px 30px;
-  background-color: #fff;
+  padding: 10px 100px;
   z-index: 5;
+  background-color: #111;
+}
+
+.nav-list a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-list a:hover {
+  color: #fff;
 }
 
 .nav-logo-img {
@@ -139,6 +149,14 @@ textarea:active {
   background-color: #00aeff;
 }
 
+.banner .control {
+  color: #006fb2;
+}
+
+.banner .control:hover {
+  color: #00aeff;
+}
+
 .banner-before-bt {
   position: absolute;
   top: 50%;
@@ -167,9 +185,8 @@ textarea:active {
 }
 
 .banner-now-bt-list {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
   color: #fff;
   background-color: #006fb2;
 }
@@ -196,8 +213,9 @@ textarea:active {
 
 .container-fluid {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 0 auto;
+  padding: 56px;
 }
 
 .col-6 {
@@ -283,4 +301,239 @@ textarea:active {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* battleNet */
+
+.battleNet {
+  width: 100%;
+}
+
+.battleNet-box {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  background-image: url(./assets/battlenet-back.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.battleNet-innerbox {
+  display: flex;
+  position: relative;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 56px;
+}
+
+.battleNet-img {
+  height: 332px;
+}
+
+.battleNet-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  width: 590px;
+  height: 332px;
+  color: #fff;
+}
+
+.battleNet-p h1 {
+  font-size: 4rem;
+}
+
+.battleNet-p ul {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.battleNet-p ul .fas {
+  margin-right: 20px;
+}
+
+.battleNet-link {
+  font-size: 1.5rem;
+}
+
+.battleNet-link a:nth-child(1) {
+  margin-right: 30px;
+}
+
+.battleNet-link a .fab {
+  margin-left: 10px;
+}
+
+.battleNet-mark {
+  height: 312px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-40%);
+  opacity: 0.5;
+}
+
+/* recruitment */
+
+.recruitment {
+  width: 100%;
+}
+
+.recruitment-box {
+  position: relative;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.recruitment-box img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.recruitment-p {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 56px;
+  color: #fff;
+}
+
+.recruitment-p h1 {
+  font-size: 4rem;
+}
+
+.recruitment-p p {
+  font-size: 2rem;
+}
+
+.recruitment-p button {
+  font-size: 1.5rem;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+}
+
+.footer-box {
+  width: 100%;
+  max-width: 1800px;
+  padding: 56px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #002650;
+}
+
+.footer-info-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 56px;
+}
+
+.footer-info-logo {
+  height: 80px;
+}
+
+.footer-detail-info {
+  display: flex;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.footer-detail-info li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.footer-detail-info li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-detail-info li a:hover {
+  color: #fff;
+}
+
+.footer-detail-info li:last-child {
+  border: none;
+}
+
+.footer-detail-info-p-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-detail-info-p {
+  display: flex;
+  white-space: nowrap;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.footer-detail-info-p-box button {
+  padding: 0 20px;
+}
+
+.footer-battlenet-logo {
+  width: 20px;
+}
+
+.footer-comp-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 56px;
+}
+
+.footer-comp-detail-info {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.footer-comp-detail-info span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-comp-detail-info li {
+  padding: 0 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.footer-comp-detail-info li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-comp-detail-info li a:hover {
+  color: #fff;
+}
+
+.footer-comp-detail-info li:nth-child(1) {
+  padding-left: 0;
+}
+
+.footer-comp-detail-info li:last-child {
+  border: none;
 }
