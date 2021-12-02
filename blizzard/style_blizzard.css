@@ -84,6 +84,10 @@ textarea:active {
   color: #fff;
 }
 
+.nav-list i {
+  margin-left: 20px;
+}
+
 .nav-logo-img {
   width: 150px;
 }
@@ -211,96 +215,86 @@ textarea:active {
   margin: 0 auto;
 }
 
+.game-title {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 54px 0;
+  color: #fff;
+}
+
+.game-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 54px 32px;
+  margin: 0 auto;
+}
+
+.game-filter-bt {
+  background-color: rgb(0, 111, 178);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.game-filter-bt:hover {
+  background-color: rgb(0, 174, 255);
+}
+
+.game-buy {
+  color: rgb(0, 174, 255);
+}
+
 .container-fluid {
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 56px;
+  padding: 0 56px 56px;
 }
 
 .col-6 {
+  position: relative;
   height: 500px;
+  overflow: hidden;
 }
 
-.col-6:nth-child(1) {
-  background-image: url(./assets/game-dia3-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.col-6.hidden {
+  display: none;
 }
 
-.col-6:nth-child(2) {
-  background-image: url(./assets/game-dia4-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(3) {
-  background-image: url(./assets/game-diaIM-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(4) {
-  background-image: url(./assets/game-diaR-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(5) {
-  background-image: url(./assets/game-HOS-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(6) {
-  background-image: url(./assets/game-HS-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(7) {
-  background-image: url(./assets/game-over1-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(8) {
-  background-image: url(./assets/game-over2-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(9) {
-  background-image: url(./assets/game-SC1-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(10) {
-  background-image: url(./assets/game-SC2-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(11) {
-  background-image: url(./assets/game-WC3-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.col-6:nth-child(12) {
-  background-image: url(./assets/game-WOW-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.col-6.show {
+  display: block;
 }
 
-.col-6:nth-child(13) {
-  background-image: url(./assets/game-ACC-img.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.col-6 a img {
+  width: 360px;
+  height: 480px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.col-6:hover .game-hover-info {
+  top: 0;
+}
+
+.game-hover-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 480px;
+  font-size: 12px;
+  position: absolute;
+  top: -100%;
+  left: 12px;
+  z-index: 2;
+  padding-right: 0 24px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 500ms ease;
 }
 
 /* battleNet */
@@ -481,11 +475,23 @@ textarea:active {
   align-items: center;
 }
 
+.footer-detail-info-p-box button .fa-globe {
+  margin-right: 5px;
+}
+
+.footer-detail-info-p-box button .fa-sort-amount-down {
+  margin-left: 10px;
+}
+
 .footer-detail-info-p {
   display: flex;
   white-space: nowrap;
   padding: 10px 20px;
   margin: 0;
+}
+
+.footer-detail-info-p img {
+  margin: 0 5px 0 10px;
 }
 
 .footer-detail-info-p-box button {

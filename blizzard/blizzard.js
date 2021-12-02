@@ -98,3 +98,58 @@ $(".banner-now-bt-list")
     $(".banner-now-bt-list").eq(4).css("background-color", "#00aeff");
     nowficture = 5;
   });
+
+$("#game-filter-bt-All").on("click", function () {
+  $(".col-6").removeClass("hidden");
+  $(".col-6").addClass("show");
+  $(".game-filter-bt").css("background-color", "rgb(0, 111, 178)");
+  $("#game-filter-bt-All").css("background-color", "rgb(0, 174, 255)");
+});
+
+$("#game-filter-bt-RPG").on("click", function () {
+  $(".col-6").removeClass("show");
+  $(".col-6").addClass("hidden");
+  $(".RPG").addClass("show");
+  $(".game-filter-bt").css("background-color", "rgb(0, 111, 178)");
+  $("#game-filter-bt-RPG").css("background-color", "rgb(0, 174, 255)");
+});
+
+$("#game-filter-bt-RTS").on("click", function () {
+  $(".col-6").removeClass("show");
+  $(".col-6").addClass("hidden");
+  $(".RTS").addClass("show");
+  $(".game-filter-bt").css("background-color", "rgb(0, 111, 178)");
+  $("#game-filter-bt-RTS").css("background-color", "rgb(0, 174, 255)");
+});
+
+$("#game-filter-bt-FPS").on("click", function () {
+  $(".col-6").removeClass("show");
+  $(".col-6").addClass("hidden");
+  $(".FPS").addClass("show");
+  $(".game-filter-bt").css("background-color", "rgb(0, 111, 178)");
+  $("#game-filter-bt-FPS").css("background-color", "rgb(0, 174, 255)");
+});
+
+$("#game-filter-bt-CCG").on("click", function () {
+  $(".col-6").removeClass("show");
+  $(".col-6").addClass("hidden");
+  $(".CCG").addClass("show");
+  $(".game-filter-bt").css("background-color", "rgb(0, 111, 178)");
+  $("#game-filter-bt-CCG").css("background-color", "rgb(0, 174, 255)");
+});
+
+$("#game-filter-bt-MOBA").on("click", function () {
+  $(".col-6").removeClass("show");
+  $(".col-6").addClass("hidden");
+  $(".MOBA").addClass("show");
+  $(".game-filter-bt").css("background-color", "rgb(0, 111, 178)");
+  $("#game-filter-bt-MOBA").css("background-color", "rgb(0, 174, 255)");
+});
+
+$("#game-filter-bt-REST").on("click", function () {
+  $(".col-6").removeClass("show");
+  $(".col-6").addClass("hidden");
+  $(".REST").addClass("show");
+  $(".game-filter-bt").css("background-color", "rgb(0, 111, 178)");
+  $("#game-filter-bt-REST").css("background-color", "rgb(0, 174, 255)");
+});
