@@ -153,3 +153,12 @@ $("#game-filter-bt-REST").on("click", function () {
   $(".game-filter-bt").css("background-color", "rgb(0, 111, 178)");
   $("#game-filter-bt-REST").css("background-color", "rgb(0, 174, 255)");
 });
+
+$("#nav-game-click-bt").on("click", function () {
+  $(".nav-game-box").slideToggle();
+  console.log(1);
+});
+
+$("#footer-lang-bt").on("click", function () {
+  $(".footer-lang-box").slideToggle();
+});

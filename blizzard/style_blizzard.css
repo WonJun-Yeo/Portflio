@@ -61,6 +61,33 @@ textarea:active {
   background-color: #111;
 }
 
+.nav-game-box {
+  display: none;
+  position: fixed;
+  top: 120px;
+  width: 100%;
+  max-width: 1800px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px 100px 0;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.nav-game-box a {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 30px;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.nav-game-box a img {
+  width: 64px;
+}
+
 .nav-list {
   position: fixed;
   top: 0;
@@ -74,6 +101,14 @@ textarea:active {
   padding: 10px 100px;
   z-index: 5;
   background-color: #111;
+}
+
+.nav-list button {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-list button:hover {
+  color: #fff;
 }
 
 .nav-list a {
@@ -90,6 +125,22 @@ textarea:active {
 
 .nav-logo-img {
   width: 150px;
+}
+
+.nav-list-phone {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1800px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px 100px;
+  z-index: 5;
+  background-color: #111;
 }
 
 /* banner */
@@ -475,12 +526,32 @@ textarea:active {
   align-items: center;
 }
 
-.footer-detail-info-p-box button .fa-globe {
+#footer-lang-bt {
+  position: relative;
+}
+
+#footer-lang-bt .fa-globe {
   margin-right: 5px;
 }
 
-.footer-detail-info-p-box button .fa-sort-amount-down {
+#footer-lang-bt .fa-sort-amount-down {
   margin-left: 10px;
+}
+
+.footer-lang-box {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -300px;
+  padding: 0 10px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.footer-lang-box a {
+  white-space: nowrap;
+  padding: 0 10px;
 }
 
 .footer-detail-info-p {
@@ -542,4 +613,357 @@ textarea:active {
 
 .footer-comp-detail-info li:last-child {
   border: none;
+}
+
+@media screen and (max-width: 1600px) {
+  /* nav */
+
+  .nav-list {
+    font-size: 1.2rem;
+  }
+
+  /* banner */
+
+  .banner-desc p {
+    font-size: 3.2rem;
+  }
+
+  .banner-desc-bt {
+    font-size: 0.8rem;
+  }
+
+  .banner-before-bt {
+    font-size: 1.6rem;
+  }
+
+  .banner-after-bt {
+    font-size: 1.6rem;
+  }
+
+  /* game */
+
+  .col-6 {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .col-6 a img {
+    width: 288px;
+    height: 384px;
+  }
+
+  .col-6:hover .game-hover-info {
+    top: 0;
+  }
+
+  .game-hover-info {
+    width: 288px;
+    height: 384px;
+    font-size: 12px;
+  }
+
+  /* battleNet */
+
+  .battleNet-img {
+    height: 256px;
+  }
+
+  .battleNet-mark {
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-42%);
+    opacity: 0.5;
+  }
+
+  .battleNet-p {
+    width: 472px;
+    height: 266px;
+  }
+
+  .battleNet-p h1 {
+    font-size: 3.2rem;
+  }
+
+  .battleNet-p ul {
+    font-size: 1.6rem;
+  }
+
+  .battleNet-link {
+    font-size: 1.2rem;
+  }
+
+  /* recruitment */
+
+  .recruitment-p h1 {
+    font-size: 3.2rem;
+  }
+
+  .recruitment-p p {
+    font-size: 1.6rem;
+  }
+
+  .recruitment-p button {
+    font-size: 1.2rem;
+  }
+
+  /* footer */
+
+  .footer-info-box {
+    font-size: 0.8rem;
+  }
+
+  .footer-comp-info {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 56px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* nav */
+
+  .nav-box {
+    height: 100px;
+  }
+
+  .nav-game-box {
+    display: none;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    max-width: 1800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    z-index: 5;
+    overflow: hidden;
+  }
+
+  .nav-game-box a {
+    font-size: 0.8rem;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-game-box a img {
+    width: 30px;
+  }
+
+  .nav-list {
+    height: 100px;
+    font-size: 1rem;
+    padding: 30px;
+  }
+
+  .nav-list i {
+    margin-left: 10px;
+  }
+
+  .nav-logo-img {
+    width: 100px;
+  }
+
+  /* banner */
+
+  .banner-list-item {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 400px;
+  }
+
+  .banner-desc img {
+    width: 150px;
+  }
+
+  .banner-desc p {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+
+  .banner-desc-bt {
+    font-size: 0.8rem;
+    padding: 8px 42px;
+  }
+
+  .banner-before-bt {
+    font-size: 1.6rem;
+  }
+
+  .banner-after-bt {
+    font-size: 1.6rem;
+  }
+
+  .banner-now-bt {
+    font-size: 0.8rem;
+    width: 137px;
+  }
+
+  /* game */
+
+  .game-title {
+    padding: 30px 0;
+  }
+
+  .game-filter {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px;
+  }
+
+  .game-filter-bt {
+    background-color: rgb(0, 111, 178);
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-fluid {
+    padding: 0 30px;
+  }
+
+  .col-6 {
+    height: 460px;
+  }
+
+  .col-6.show {
+    display: block;
+  }
+
+  .col-6 a img {
+    width: 330px;
+    height: 440px;
+  }
+
+  .col-6:hover .game-hover-info {
+    top: 0;
+  }
+
+  .game-hover-info {
+    width: 330px;
+    height: 440px;
+    font-size: 12px;
+  }
+
+  /* battleNet */
+
+  .battleNet-innerbox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .battleNet-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .battleNet-p {
+    position: relative;
+    right: none;
+    width: 590px;
+    height: 250px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .battleNet-p h1 {
+    font-size: 2.5rem;
+  }
+
+  .battleNet-p ul {
+    font-size: 1.6rem;
+  }
+
+  .battleNet-link {
+    font-size: 1.2rem;
+  }
+
+  .battleNet-mark {
+    display: none;
+  }
+
+  /* recruitment */
+
+  .recruitment-p {
+    padding: 30px;
+  }
+
+  .recruitment-p h1 {
+    font-size: 2.5rem;
+  }
+
+  .recruitment-p p {
+    font-size: 1.6rem;
+  }
+
+  .recruitment-p button {
+    font-size: 1.2rem;
+  }
+
+  /* footer */
+
+  .footer-box {
+    padding: 30px;
+  }
+
+  .footer-info-box {
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .footer-info-logo {
+    height: 50px;
+  }
+
+  .footer-detail-info {
+    padding-top: 10px;
+  }
+  .footer-detail-info li {
+    padding: 0 10px;
+  }
+
+  .footer-info-box {
+    font-size: 0.8rem;
+  }
+
+  .footer-comp-info {
+    font-size: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .footer-lang-box {
+    top: 20px;
+    left: -390px;
+    background-color: rgba(0, 0, 0, 1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list-phone {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    font-size: 1rem;
+    padding: 30px;
+  }
+
+  .nav-menu-bar {
+    color: rgb(0, 111, 178);
+  }
+
+  .nav-menu-bar:active {
+    color: rgb(0, 174, 255);
+  }
 }
