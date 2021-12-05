@@ -50,6 +50,7 @@ textarea:active {
 
 .nav {
   width: 100%;
+  background-color: #111;
 }
 
 .nav-box {
@@ -143,10 +144,73 @@ textarea:active {
   color: rgb(0, 111, 178);
 }
 
+.nav-list-phone .nav-menu-bar-list {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  display: none;
+  width: 50%;
+  background-color: #111;
+  text-align: center;
+}
+
+.nav-menu-bar-list div {
+  border-bottom: 1px solid #30272a;
+  padding: 10px 0;
+}
+
+.nav-menu-bar-list-logo {
+  width: 100px;
+}
+
+.nav-menu-bar-list-game-bt-title {
+  width: 100%;
+}
+
+.nav-menu-bar-list-game-bt-title i {
+  margin-left: 5px;
+}
+
+.nav-menu-bar-list-game-box {
+  max-height: 250px;
+  overflow: auto;
+}
+
+.nav-menu-bar-list-game-box::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 64px;
+}
+
+.nav-menu-bar-list-game-box::-webkit-scrollbar-thumb {
+  background-color: #00aeff;
+  border-radius: 64px;
+}
+
+.nav-menu-bar-list-game-box::-webkit-scrollbar-track {
+  background-color: #8a8a8a;
+  border-radius: 64px;
+}
+
+.nav-menu-bar-list-game {
+  display: none;
+}
+
+.nav-menu-bar-list-game li {
+  padding: 10px 0;
+}
+
+.nav-menu-bar-list-game li a img {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+}
+
 /* banner */
 
 .banner {
   width: 100%;
+  background-color: #111;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .banner-box {
@@ -254,15 +318,15 @@ textarea:active {
 
 .game {
   width: 100%;
+  background-image: url(./assets/game-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .game-box {
   width: 100%;
   max-width: 1800px;
-  background-image: url(./assets/game-back.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   margin: 0 auto;
 }
 
@@ -289,6 +353,10 @@ textarea:active {
   background-color: rgb(0, 111, 178);
   color: #fff;
   padding: 10px 20px;
+}
+
+.game-filter-bt:nth-child(1) {
+  background-color: rgb(0, 174, 255);
 }
 
 .game-filter-bt:hover {
@@ -352,17 +420,19 @@ textarea:active {
 
 .battleNet {
   width: 100%;
+  background-image: url(./assets/battlenet-back.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-top: 0.1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .battleNet-box {
   width: 100%;
   max-width: 1800px;
   margin: 0 auto;
-  background-image: url(./assets/battlenet-back.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .battleNet-innerbox {
@@ -427,6 +497,8 @@ textarea:active {
 
 .recruitment {
   width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(#30272a, #002650);
 }
 
 .recruitment-box {
@@ -434,6 +506,7 @@ textarea:active {
   width: 100%;
   max-width: 1800px;
   margin: 0 auto;
+  z-index: 5;
 }
 
 .recruitment-box img {
@@ -442,6 +515,7 @@ textarea:active {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: all 1s ease;
   z-index: -1;
 }
 
@@ -463,12 +537,23 @@ textarea:active {
 
 .recruitment-p button {
   font-size: 1.5rem;
+  background-color: #006fb2;
+  padding: 10px 50px;
+  border: 1px solid #00aeff;
+  transition: all 250ms ease;
+}
+
+.recruitment-p button:hover {
+  background-color: #00aeff;
+  color: #111;
 }
 
 /* footer */
 
 .footer {
   width: 100%;
+  background-color: #002650;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-box {
@@ -477,7 +562,6 @@ textarea:active {
   padding: 56px;
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.7);
-  background-color: #002650;
 }
 
 .footer-info-box {
@@ -705,7 +789,7 @@ textarea:active {
   }
 
   .recruitment-p button {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   /* footer */
@@ -970,14 +1054,14 @@ textarea:active {
   /* banner */
 
   .banner-list-item {
-    height: 400px;
+    height: 300px;
   }
 
   .banner-desc {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    bottom: 150px;
+    bottom: 80px;
   }
 
   .banner-desc img {
@@ -1092,7 +1176,7 @@ textarea:active {
   }
 
   .recruitment-p button {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
   }
 
   /* footer */

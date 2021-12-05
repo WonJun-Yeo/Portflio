@@ -1,8 +1,40 @@
 let nowficture = 1;
 
+let nowIMG = 1;
+
 setInterval(() => {
   nextSlideShow();
 }, 5000);
+
+setInterval(() => {
+  opacityShow();
+}, 5000);
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop() > 100) {
+    $(".nav-list").css("background-color", "rgba(0,0,0,0.7");
+  }
+});
+
+function opacityShow() {
+  if (nowIMG == 1) {
+    $(".recruitment-img").css("opacity", "0");
+    $(".recruitment-img").eq(1).css("opacity", "1");
+    nowIMG = 2;
+  } else if (nowIMG == 2) {
+    $(".recruitment-img").css("opacity", "0");
+    $(".recruitment-img").eq(2).css("opacity", "1");
+    nowIMG = 3;
+  } else if (nowIMG == 3) {
+    $(".recruitment-img").css("opacity", "0");
+    $(".recruitment-img").eq(3).css("opacity", "1");
+    nowIMG = 4;
+  } else if (nowIMG == 4) {
+    $(".recruitment-img").css("opacity", "0");
+    $(".recruitment-img").eq(0).css("opacity", "1");
+    nowIMG = 1;
+  }
+}
 
 function nextSlideShow() {
   if (nowficture == 1) {
@@ -145,4 +177,12 @@ $("#nav-game-click-bt").on("click", function () {
 
 $("#footer-lang-bt").on("click", function () {
   $(".footer-lang-box").slideToggle();
+});
+
+$(".nav-menu-bar").on("click", function () {
+  $(".nav-menu-bar-list").slideToggle();
+});
+
+$(".nav-menu-bar-list-game-bt").on("click", function () {
+  $(".nav-menu-bar-list-game").slideToggle();
 });
