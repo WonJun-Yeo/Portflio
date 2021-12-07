@@ -12,6 +12,7 @@
 body {
   position: relative;
   background-color: #bcdae7;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -65,179 +66,13 @@ textarea:active {
   box-shadow: none;
 }
 
-/* intro */
-
-@keyframes intro {
-  0% {
-    opacity: 1;
-    z-index: 10;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes disappear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes jump {
-  0% {
-    margin-bottom: 0;
-  }
-  50% {
-    margin-bottom: 30px;
-  }
-  60% {
-    margin-bottom: 0;
-  }
-  80% {
-    margin-bottom: 20px;
-  }
-  100% {
-    margin-bottom: 0;
-  }
-}
-
-.intro-wraper {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  background-color: #fff;
-  opacity: 1;
-  animation-name: intro;
-  animation-delay: 6s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.intro {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  max-width: 1900px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.bgv {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-
-.hello {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-.hello-paragraph-list {
-  animation-name: disappear;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-
-.hello-paragraph-list-item {
-  font-size: 2rem;
-  text-align: center;
-  animation-name: jump;
-  animation-duration: 1s;
-}
-
-.items {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.items-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  animation-name: disappear;
-  animation-delay: 4.5s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.items-list-item {
-  display: inline-block;
-  width: 300px;
-  text-align: center;
-  opacity: 0;
-  animation-name: appear;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.items-list-item:nth-child(1) {
-  animation-delay: 2s;
-}
-
-.items-list-item:nth-child(2) {
-  animation-delay: 2.5s;
-}
-
-.items-list-item:nth-child(3) {
-  animation-delay: 3s;
-}
-
-.items-list-item .fas {
-  font-size: 50px;
-  margin-bottom: 20px;
-  color: rgb(255, 0, 0);
-}
-
-.items-list-item h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-.Chrome {
-  position: absolute;
-  top: 80vh;
-  width: 100%;
-  font-size: 0.7rem;
-  color: #fff;
-  text-align: center;
-}
+/* header */
 
 .main-wraper {
-  position: relative;
   width: 100%;
   max-width: 1900px;
-  height: 100%;
   margin: 0 auto;
 }
-
-/* header */
 
 .header {
   position: fixed;
@@ -250,6 +85,7 @@ textarea:active {
   background-color: #6b799e;
   transition: all 1s ease;
   z-index: 4;
+  margin: 0 auto;
 }
 
 .header.active {
@@ -337,6 +173,7 @@ textarea:active {
   margin: 0 auto;
   color: #fca70a;
   font-weight: 700;
+  z-index: 5;
 }
 
 .section-notice span {
@@ -352,17 +189,30 @@ textarea:active {
 /* self-introduction */
 
 .self-introduction {
+  position: sticky;
+  top: 0;
   width: 100%;
+  height: 100vh;
+  padding: 140px 0;
+}
+
+.self-introduction-box {
+  width: 80%;
+  height: 100%;
+  border-radius: 64px;
+
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 180px 30px 30px;
+  padding: 30px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid #fca70a;
 }
 
 .self-introduction img {
   width: 40%;
-  border-radius: 16px;
+  border-radius: 64px;
   object-fit: cover;
-  box-shadow: 10px 10px 0 0 rgba(252, 167, 10, 0.5);
 }
 
 .paragraph {
@@ -370,7 +220,7 @@ textarea:active {
   display: flex;
   flex-direction: column;
   line-height: 1.5;
-  padding: 0 80px;
+  padding-left: 30px;
 }
 
 @keyframes typing {
@@ -397,7 +247,7 @@ textarea:active {
 
 .typing p {
   width: 0;
-  font-size: 4rem;
+  font-size: 2rem;
   display: inline-block;
   overflow: hidden;
   border-right: 5px;
@@ -408,7 +258,7 @@ textarea:active {
 
 .paragraph-title {
   width: 100%;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 @keyframes division {
@@ -428,58 +278,58 @@ textarea:active {
   border-bottom-right-radius: 64px;
   animation-name: division;
   animation-duration: 2s;
-  animation-delay: 7s;
+  animation-delay: 1s;
   animation-timing-function: ease-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 .paragraph-desc {
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 /* skill */
 
 .skill {
+  position: sticky;
+  top: 0;
   width: 100%;
+  height: 100vh;
+  padding: 140px 0;
+}
+
+.skill-box {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 64px;
   padding: 30px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid #fca70a;
 }
 
 .skill-title {
+  text-align: center;
   margin-bottom: 15px;
 }
 
-.skill-header-img {
-  width: 100%;
-  height: 200px;
-  background-image: url(./assets/banner-header-img-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 .skill-list {
+  display: flex;
   width: 100%;
   height: auto;
 }
 
 .skill-list-item {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  width: 100%;
   line-height: 1.5;
-  margin-bottom: 50px;
 }
 
 .skill-list-item-title {
-  width: 40%;
-  font-size: 3rem;
-  padding: 10px 0 10px 60px;
-  opacity: 0;
+  font-size: 1.5rem;
   transition: all 1s ease;
   overflow: hidden;
 }
@@ -491,14 +341,16 @@ textarea:active {
 }
 
 .skill-list-item-title.active {
-  padding: 10px 0 10px 10px;
   opacity: 1;
 }
 
+.skill-list-item-img {
+  height: 80px;
+  margin-bottom: 15px;
+}
+
 .skill-list-item-desc {
-  width: 60%;
-  padding: 0 80px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .highlight {
@@ -506,7 +358,7 @@ textarea:active {
   left: 0;
   bottom: 10px;
   width: 0;
-  height: 15px;
+  height: 5px;
   background-color: rgba(252, 167, 10, 0.4);
   transition: all 500ms ease;
 }
@@ -518,13 +370,24 @@ textarea:active {
 /* banner */
 
 .banner {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 140px 0;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 1900px;
-  padding: 30px;
-  margin: 0 auto;
   color: #111;
+}
+
+.banner-box {
+  width: 80%;
+  height: 100%;
+  border-radius: 64px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid #fca70a;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .appeal {
@@ -532,21 +395,14 @@ textarea:active {
   color: #111;
 }
 
-.banner-header-img {
-  width: 100%;
-  height: 200px;
-  background-image: url(./assets/banner-header-img-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+.appeal-title {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .banner-main {
   width: 100%;
-  height: 100%;
   display: flex;
-  padding-top: 30px;
 }
 
 .banner-paragraph {
@@ -554,24 +410,20 @@ textarea:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
-  height: 100%;
+  width: 50%;
 }
 
 .banner-title {
-  font-size: 3rem;
-  margin-bottom: 30px;
+  font-size: 2rem;
 }
 
 .banner-title .fa-play-circle {
   color: rgb(63, 150, 114);
-  margin-right: 10px;
 }
 
 .banner-desc {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .banner-link {
@@ -579,14 +431,12 @@ textarea:active {
   justify-content: center;
   align-items: center;
   width: fit-content;
-  padding: 15px 30px;
   background-color: #fca70a;
-  border-radius: 8px;
+  border-radius: 64px;
 }
 
 .banner-link .fa-compact-disc {
   font-size: 1.5rem;
-  margin-right: 15px;
   transition: all 250ms ease-in-out;
 }
 
@@ -607,17 +457,15 @@ textarea:active {
 }
 
 .banner-manual {
-  width: 60%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .banner-manual-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 100%;
-  height: 100%;
-  font-size: 1rem;
-  padding: 0 80px;
+  font-size: 1.2rem;
 }
 
 /* player */
@@ -633,7 +481,6 @@ textarea:active {
   color: #111;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
-  padding: 10px 30px;
 }
 
 .player-main {
@@ -895,17 +742,27 @@ li.operater-icon-list-end i {
 /* footer */
 
 footer {
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1900px;
+  height: 100vh;
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
-  padding: 60px;
-  margin: 0 auto;
+  padding: 140px 0;
+}
 
-  background-color: rgba(107, 121, 158, 0.5);
+.footer-box {
+  width: 80%;
+  height: 100%;
+  border-radius: 64px;
+  margin: 0 auto;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid #fca70a;
+  color: #111;
+  padding: 30px;
 }
 
 .footer-title {
