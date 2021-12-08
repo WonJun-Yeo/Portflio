@@ -1,0 +1,4 @@
+fooeter : 디자인, 배치
+banner : 배치
+player : desc 배치, operator 버튼 효과
+page 마지막 부분 : 최적화 브라우저 표기

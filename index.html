@@ -23,18 +23,12 @@
   <body>
     <div class="main-wraper">
       <header class="header">
-        <a href="#ABOUT" class="UpToHeader"> W.J's Portfolio </a>
-        <div class="UpToHeader-notice">
-          <p>Up To Head</p>
-          <div class="UpToHeader-notice-i">
-            <i class="fas fa-sort-up"></i>
-          </div>
-        </div>
+        <button class="UpToHeader">W.J's Portfolio</button>
         <ul class="menu-list">
-          <li class="menu-list-item"><a href="#ABOUT">ABOUT</a></li>
-          <li class="menu-list-item"><a href="#SKILL">SKILL</a></li>
-          <li class="menu-list-item"><a href="#WORK">WORK</a></li>
-          <li class="menu-list-item"><a href="#CONTACT">CONTACT</a></li>
+          <li class="menu-list-item"><button id="ABOUT">ABOUT</button></li>
+          <li class="menu-list-item"><button id="SKILL">SKILL</button></li>
+          <li class="menu-list-item"><button id="WORK">WORK</button></li>
+          <li class="menu-list-item"><button id="CONTACT">CONTACT</button></li>
         </ul>
       </header>
       <section class="section-notice">
@@ -158,18 +152,18 @@
             </div>
             <div class="banner-manual">
               <ol class="banner-manual-list">
+                <li class="banner-manual-title">MANUAL</li>
                 <li class="banner-manual-list-item">
-                  Click to Play 버튼을 클릭해 Coding Player 를 실행해 주세요.
+                  1. Click to Play 버튼을 클릭해 Coding Player 를 실행해 주세요.
                 </li>
                 <li class="banner-manual-list-item">
-                  Rewind 와 Forward 버튼을 클릭해 보고싶은 홈페이지를
-                  선택하세요.
+                  2. Rewind 와 Forward 버튼을 클릭해 홈페이지를 선택하세요.
                 </li>
                 <li class="banner-manual-list-item">
-                  간단한 설명을 읽어주세요.
+                  3. 간단한 설명을 읽어주세요.
                 </li>
                 <li class="banner-manual-list-item">
-                  Play 버튼을 클릭해 홈페이지를 열어 구경하세요.
+                  4. Play 버튼을 클릭해 홈페이지를 열어 구경하세요.
                 </li>
               </ol>
             </div>
@@ -255,8 +249,8 @@
             <div class="player-desc-box">
               <ul class="slide-desc-box" id="slide-desc-box">
                 <li class="slide-desc-lsit">
-                  <h1 class="slide-desc-lsit-title">IKEA KOREA</h1>
                   <ul class="slide-desc-lsit-desc">
+                    <li><h1 class="slide-desc-lsit-title">IKEA KOREA</h1></li>
                     <li>제작기간 : 2주</li>
                     <li>디자인 : CLONE</li>
                     <li>사용기술 : HTML, CSS</li>
@@ -269,8 +263,8 @@
                   </ul>
                 </li>
                 <li class="slide-desc-lsit">
-                  <h1 class="slide-desc-lsit-title">W.J Coffee</h1>
                   <ul class="slide-desc-lsit-desc">
+                    <h1 class="slide-desc-lsit-title">W.J Coffee</h1>
                     <li>제작기간 : 2주</li>
                     <li>디자인 : self-production</li>
                     <li>사용기술 : HTML, CSS, JS</li>
@@ -284,8 +278,8 @@
                   </ul>
                 </li>
                 <li class="slide-desc-lsit">
-                  <h1 class="slide-desc-lsit-title">on the drawing board</h1>
                   <ul class="slide-desc-lsit-desc">
+                    <h1 class="slide-desc-lsit-title">on the drawing board</h1>
                     <li>제작기간 : 2주</li>
                     <li>디자인 : clone</li>
                     <li>사용기술 : HTML, CSS, JS, JQuery</li>
@@ -296,8 +290,10 @@
                   </ul>
                 </li>
                 <li class="slide-desc-lsit">
-                  <h1 class="slide-desc-lsit-title">on the drawing board 2</h1>
                   <ul class="slide-desc-lsit-desc">
+                    <h1 class="slide-desc-lsit-title">
+                      on the drawing board 2
+                    </h1>
                     <li>제작기간 : 2주</li>
                     <li>디자인 : CLONE</li>
                     <li>사용기술 : HTML, CSS, JS, JQuery</li>
@@ -312,26 +308,48 @@
           </div>
         </div>
       </section>
-      <footer id="CONTACT">
+      <footer class="footer">
         <div class="footer-box">
           <h1 class="footer-title">
-            Do you have any other questions?<br />
-            Ask directly with the information on the right.
+            다른 궁금한 점이 있으신가요? 밑의 연락처로 연락주세요!
           </h1>
           <div class="footer-info">
             <div class="footer-info-paragraph">
               Name : Wonjun Yeo<br />
               Address : 미정<br />
               E-mail : rbgh004@naver.com<br />
-              tele : 010-9033-6633
+              tele : 010-9033-6633<br />
+              GitHub : 주소주소주소
             </div>
           </div>
         </div>
       </footer>
+      <section class="page-desc">
+        <p>
+          본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+        </p>
+        <p>© 2021 Won-Jun Yeo. All Rights Reserved.</p>
+      </section>
     </div>
     <script>
+      $(".UpToHeader").on("click", function () {
+        $(window).scrollTop(0);
+      });
+      $("#ABOUT").on("click", function () {
+        $(window).scrollTop(0);
+      });
+      $("#SKILL").on("click", function () {
+        $(window).scrollTop(700);
+      });
+      $("#WORK").on("click", function () {
+        $(window).scrollTop(1500);
+      });
+      $("#CONTACT").on("click", function () {
+        $(window).scrollTop(2300);
+      });
+
       $(window).on("scroll", function () {
-        if ($(window).scrollTop() < 700) {
+        if ($(window).scrollTop() < 600) {
           $("#section-notice").html("ABOUT");
           $("#section-notice").css("top", "12.5vh");
         } else if (
@@ -354,15 +372,22 @@
 
       $(window).on("scroll", function () {
         if ($(window).scrollTop() > 100) {
-          $(".UpToHeader").html("W.J");
           $(".UpToHeader").addClass("active");
           $(".header").addClass("active");
         } else if ($(window).scrollTop() < 100) {
-          $(".UpToHeader").html("W.J's Portfolio");
           $(".UpToHeader").removeClass("active");
           $(".header").removeClass("active");
         }
       });
+
+      $(".UpToHeader").hover(
+        function () {
+          $(this).html("Up To Head");
+        },
+        function () {
+          $(this).html("W.J's Portfolio");
+        }
+      );
 
       $("#banner-link").on("click", function () {
         $("#player").fadeIn();
@@ -435,6 +460,7 @@
         $("#slide-desc-box").css("transform", "translateX(0)");
         $("#player-operater-state-bar").css("width", "90px");
         $("#play-time").html("0:57");
+        NowPicture = 1;
       });
 
       $("#slide-end-bt").click(function () {
@@ -442,11 +468,11 @@
         $("#slide-desc-box").css("transform", "translateX(-75%)");
         $("#player-operater-state-bar").css("width", "100%");
         $("#play-time").html("3:48");
+        NowPicture = 4;
       });
 
       $(window).scroll(function () {
         let height = $(window).scrollTop();
-        console.log(height);
         var y = (-1 / 200) * height + 6 / 2;
         var z = (-1 / 2000) * height + 11 / 10;
         $(".self-introduction").css("opacity", y);
@@ -473,8 +499,8 @@
         let height = $(window).scrollTop();
         var y = (-1 / 200) * height + 135 / 10;
         var z = (-1 / 2000) * height + 215 / 100;
-        $("#CONTACT").css("opacity", y);
-        $("#CONTACT").css("transform", `scale(${z})`);
+        $(".footer").css("opacity", y);
+        $(".footer").css("transform", `scale(${z})`);
       });
     </script>
   </body>

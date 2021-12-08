@@ -106,39 +106,20 @@ textarea:active {
   transition: all 1s ease;
 }
 
-.UpToHeader:hover ~ .UpToHeader-notice {
-  opacity: 1;
-}
-
-.UpToHeader-notice {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  top: 100%;
-  left: 30px;
-  color: #fca70a;
-  font-size: 12px;
-  padding: 20px 10px;
-  background-color: #fff;
-  border-radius: 16px;
-  opacity: 0;
-  transition: all 250ms ease;
-}
-
-.UpToHeader-notice p {
-  margin-right: 20px;
-}
-
 @keyframes up {
   0% {
     opacity: 0;
-    bottom: -20px;
   }
   100% {
     opacity: 1;
-    bottom: 0;
   }
+}
+
+.UpToHeader:hover {
+  animation-name: up;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .UpToHeader-notice-i {
@@ -161,7 +142,17 @@ textarea:active {
 }
 
 .menu-list-item {
-  padding: 0 15px;
+  margin: 0 10px;
+  border-radius: 64px;
+}
+
+.menu-list-item:hover {
+  background-color: #6b799e;
+}
+
+.menu-list-item button {
+  padding: 20px;
+  border-radius: 64px;
 }
 
 /* section-notice */
@@ -381,6 +372,8 @@ textarea:active {
 }
 
 .banner-box {
+  display: flex;
+  flex-direction: column;
   width: 80%;
   height: 100%;
   border-radius: 64px;
@@ -402,7 +395,10 @@ textarea:active {
 
 .banner-main {
   width: 100%;
+  height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-paragraph {
@@ -411,10 +407,12 @@ textarea:active {
   justify-content: center;
   align-items: center;
   width: 50%;
+  padding: 0 10px;
 }
 
 .banner-title {
   font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .banner-title .fa-play-circle {
@@ -422,8 +420,9 @@ textarea:active {
 }
 
 .banner-desc {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .banner-link {
@@ -433,6 +432,7 @@ textarea:active {
   width: fit-content;
   background-color: #fca70a;
   border-radius: 64px;
+  padding: 10px 20px;
 }
 
 .banner-link .fa-compact-disc {
@@ -465,7 +465,16 @@ textarea:active {
 
 .banner-manual-list {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 2;
+  padding: 10px 10px 30px;
+  border-radius: 64px;
+  border: 1px solid #111;
+}
+
+.banner-manual-title {
+  font-weight: 700;
+  text-align: center;
 }
 
 /* player */
@@ -486,14 +495,14 @@ textarea:active {
 .player-main {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 90%;
   max-width: 1440px;
-  height: 670px;
+  height: 700px;
   background-image: url(./assets/player-back-img.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  margin: 0 auto;
+  margin: 25px auto;
   border-radius: 16px;
 }
 
@@ -506,16 +515,19 @@ textarea:active {
 }
 
 .player-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   width: 580px;
   min-width: 580px;
-  height: 410px;
-  padding: 10px 80px;
+  height: 100%;
+  padding: 80px 80px 30px;
 }
 
 .player-slide-box {
   width: 100%;
-  height: 100%;
+  height: 55%;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
@@ -548,7 +560,6 @@ textarea:active {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   padding: 20px 30px;
-  margin-top: 10px;
 }
 
 .operater-icon-list {
@@ -652,7 +663,7 @@ li.operater-icon-list-end i {
 
 .player-desc-slide {
   height: 100%;
-  padding: 30px 50px;
+  padding: 80px 50px 30px 0;
 }
 
 .player-desc-box {
@@ -680,7 +691,7 @@ li.operater-icon-list-end i {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 525px;
+  height: 100%;
   font-size: 20px;
   font-weight: 400;
   line-height: 2;
@@ -691,9 +702,9 @@ li.operater-icon-list-end i {
 }
 
 .slide-desc-lsit-title {
-  font-size: 60px;
+  font-size: 2rem;
   margin-bottom: 30px;
-  padding: 0 50px;
+  text-align: center;
 }
 
 .slide-desc-lsit-desc .detail-info-button {
@@ -744,8 +755,6 @@ li.operater-icon-list-end i {
 footer {
   position: sticky;
   top: 0;
-  display: flex;
-  align-items: center;
   width: 100%;
   height: 100vh;
   font-size: 1rem;
@@ -766,8 +775,9 @@ footer {
 }
 
 .footer-title {
-  width: 50%;
+  width: 100%;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .footer-info {
@@ -777,4 +787,12 @@ footer {
 .footer-info-paragraph {
   width: 250px;
   margin: 0 auto;
+}
+
+.page-desc {
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  font-size: 0.8rem;
+  text-align: center;
 }
