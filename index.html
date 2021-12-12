@@ -13,11 +13,7 @@
       src="https://kit.fontawesome.com/518dea5592.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+
     <title>W.J's Portfolio</title>
   </head>
   <body>
@@ -42,12 +38,23 @@
             <span class="typing"><p>늦바람 든</p></span>
             <h1 class="paragraph-title">'여원준'입니다.</h1>
             <div class="paragraph-division"></div>
+            <ul class="paragraph-list">
+              <li class="paragraph-list-item">
+                <h1>학력</h1>
+                <p>영남대학교 생명공학부 생명공학전공</p>
+                <p>경북보건환경연구원 마이스터아카데미 수료</p>
+              </li>
+              <li class="paragraph-list-item">
+                <h1>이전의 행보</h1>
+                <p>SK BIOSCIENCE : FLUE 원액팀 인턴 (2020.01 ~ 2020.07)</p>
+                <p>
+                  동물세포실증지원센터 : 제조관리팀 주임 (2020.09 ~ 2021.03)
+                </p>
+              </li>
+            </ul>
             <p class="paragraph-desc">
-              안녕하세요 저는 '여원준' 입니다. 여기에 짤막한 소개를 할거에요.
-              1분 자기소개 같은 느낌으로 안녕하세요 저는 '여원준' 입니다. 여기에
-              짤막한 소개를 할거에요. 1분 자기소개 같은 느낌으로안녕하세요 저는
-              '여원준' 입니다. 여기에 짤막한 소개를 할거에요. 1분 자기소개 같은
-              느낌으로
+              Coding의 매력에 빠져 새로운 도전을 하고 있습니다.<br />
+              '늦바람이 용마름을 벗긴다' 라는 속담같은 저를 소개합니다.
             </p>
           </div>
         </div>
@@ -90,7 +97,7 @@
             </li>
             <li class="skill-list-item">
               <h1 class="skill-list-item-title" id="list-show-2">
-                <p>SCSS<span class="highlight"></span></p>
+                <p>SASS<span class="highlight"></span></p>
               </h1>
               <img
                 class="skill-list-item-img"
@@ -128,9 +135,9 @@
                 alt=""
               />
               <p class="skill-list-item-desc">
+                JQuery로 불가능한 동적요소 구현<br />
                 디자인 기획의도 완벽이해<br />
-                사용자 중심 UI/UX<br />
-                협업을 위한 업무 프로세스를 준수<br />
+                사용자 중심 UI/UX 설계<br />
                 끊임없는 노력과 발전
               </p>
             </li>
@@ -176,6 +183,7 @@
       </section>
       <section class="player" id="player">
         <div class="player-main" id="player-main">
+          <div class="player-ani-box">제 작업물을 구경해 주세요!</div>
           <button type="button" class="player-close" id="player-close">
             <i class="fas fa-window-close"></i>
           </button>
@@ -258,6 +266,7 @@
                     <li>제작기간 : 2주</li>
                     <li>디자인 : CLONE</li>
                     <li>사용기술 : HTML, CSS</li>
+                    <li>형태 : 반응형</li>
                     <li>
                       설명 : HTML, CSS 공부 후 처음으로 해본 클론 코딩 홈페이지
                     </li>
@@ -305,15 +314,45 @@
       <footer class="footer">
         <div class="footer-box">
           <h1 class="footer-title">
-            함께 하고싶습니다. 밑의 연락처로 연락주세요!
+            제 포트폴리오를 끝까지 봐주셔서 감사합니다!
           </h1>
           <div class="footer-info">
-            <div class="footer-info-paragraph">
-              Name : Wonjun Yeo<br />
-              Address : 미정<br />
-              E-mail : rbgh004@naver.com<br />
-              tele : 010-9033-6633<br />
-              GitHub : 주소주소주소
+            <ul class="footer-info-list">
+              <li class="footer-info-list-item">
+                <a href="" class="footer-info-list-item-hover-1 fib">
+                  <h1>SNS</h1>
+                  <i class="fas fa-comment-dots icon"></i>
+                </a>
+                <p>https://open.kakao.com/o/sGNXgEOd</p>
+              </li>
+              <li class="footer-info-list-item">
+                <a href="" class="footer-info-list-item-hover-2 fib">
+                  <h1>E-mail</h1>
+                  <i class="fas fa-envelope icon"></i>
+                </a>
+                <p>rbgh004@naver.com</p>
+              </li>
+              <li class="footer-info-list-item">
+                <a href="" class="footer-info-list-item-hover-3 fib">
+                  <h1>Phone</h1>
+                  <i class="fas fa-phone icon"></i>
+                </a>
+                <p>010-9033-6633</p>
+              </li>
+              <li class="footer-info-list-item">
+                <a href="" class="footer-info-list-item-hover-4 fib">
+                  <h1>GitHub</h1>
+                  <i class="fab fa-github icon"></i>
+                </a>
+                <p>https://github.com/WonJun-Yeo</p>
+              </li>
+            </ul>
+            <div class="footer-ft">
+              현재에 머물러 흘러가는 시간을 그대로 두지 않습니다.<br />
+              완성도 있는 Coding을 하기 위해 대충 마무리 하지 않습니다.<br />
+              부족한 부분을 공부하며, 정리하고 체화(體化)합니다. <br />
+              충고와 조언은 이성적으로 받아 들입니다.<br />
+              <span>함께할 수 있는 경험을 기다리겠습니다. 감사합니다!</span>
             </div>
           </div>
         </div>
@@ -325,178 +364,11 @@
         <p>© 2021 Won-Jun Yeo. All Rights Reserved.</p>
       </section>
     </div>
-    <script>
-      $(".UpToHeader").on("click", function () {
-        $(window).scrollTop(0);
-      });
-      $("#ABOUT").on("click", function () {
-        $(window).scrollTop(0);
-      });
-      $("#SKILL").on("click", function () {
-        $(window).scrollTop(700);
-      });
-      $("#WORK").on("click", function () {
-        $(window).scrollTop(1400);
-      });
-      $("#CONTACT").on("click", function () {
-        $(window).scrollTop(2100);
-      });
-
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop() < 600) {
-          console.log($(window).scrollTop());
-          $("#section-notice").html("ABOUT");
-          $("#section-notice").css("top", "12.5vh");
-        } else if (
-          $(window).scrollTop() >= 600 &&
-          $(window).scrollTop() < 1300
-        ) {
-          $("#section-notice").html("SKILL");
-          $("#section-notice").css("top", "35vh");
-        } else if (
-          $(window).scrollTop() >= 1300 &&
-          $(window).scrollTop() < 2000
-        ) {
-          $("#section-notice").html("WORK");
-          $("#section-notice").css("top", "57.5vh");
-        } else {
-          $("#section-notice").html("CONTACT");
-          $("#section-notice").css("top", "80vh");
-        }
-      });
-
-      $(window).on("scroll", function () {
-        if ($(window).scrollTop() > 100) {
-          $(".UpToHeader").addClass("active");
-          $(".header").addClass("active");
-        } else if ($(window).scrollTop() < 100) {
-          $(".UpToHeader").removeClass("active");
-          $(".header").removeClass("active");
-        }
-      });
-
-      $(".UpToHeader").hover(
-        function () {
-          $(this).html("Up To Head");
-        },
-        function () {
-          $(this).html("W.J's Portfolio");
-        }
-      );
-
-      $("#banner-link").on("click", function () {
-        $("#player").fadeIn();
-      });
-
-      $("#player-close").on("click", function () {
-        $("#player").fadeOut();
-      });
-
-      var NowPicture = 1;
-
-      $("#slide-after-bt").click(function () {
-        if (NowPicture == 1) {
-          $("#slide-img-box").css("transform", "translateX(-25%)");
-          $("#slide-desc-box").css("transform", "translateX(-25%)");
-          $("#player-operater-state-bar").css("width", "50%");
-          $("#play-time").html("1:54");
-          NowPicture = 2;
-        } else if (NowPicture == 2) {
-          $("#slide-img-box").css("transform", "translateX(-50%)");
-          $("#slide-desc-box").css("transform", "translateX(-50%)");
-          $("#player-operater-state-bar").css("width", "75%");
-          $("#play-time").html("2:51");
-          NowPicture = 3;
-        } else if (NowPicture == 3) {
-          $("#slide-img-box").css("transform", "translateX(-75%)");
-          $("#slide-desc-box").css("transform", "translateX(-75%)");
-          $("#player-operater-state-bar").css("width", "100%");
-          $("#play-time").html("3:48");
-          NowPicture = 4;
-        } else if (NowPicture == 4) {
-          $("#slide-img-box").css("transform", "translateX(0)");
-          $("#slide-desc-box").css("transform", "translateX(0)");
-          $("#player-operater-state-bar").css("width", "25%");
-          $("#play-time").html("0:57");
-          NowPicture = 1;
-        }
-      });
-
-      $("#slide-before-bt").click(function () {
-        if (NowPicture == 1) {
-          $("#slide-img-box").css("transform", "translateX(-75%)");
-          $("#slide-desc-box").css("transform", "translateX(-75%)");
-          $("#player-operater-state-bar").css("width", "100%");
-          $("#play-time").html("3:48");
-          NowPicture = 4;
-        } else if (NowPicture == 2) {
-          $("#slide-img-box").css("transform", "translateX(0)");
-          $("#slide-desc-box").css("transform", "translateX(0)");
-          $("#player-operater-state-bar").css("width", "25%");
-          $("#play-time").html("0:57");
-          NowPicture = 1;
-        } else if (NowPicture == 3) {
-          $("#slide-img-box").css("transform", "translateX(-25%)");
-          $("#slide-desc-box").css("transform", "translateX(-25%)");
-          $("#player-operater-state-bar").css("width", "50%");
-          $("#play-time").html("1:54");
-          NowPicture = 2;
-        } else if (NowPicture == 4) {
-          $("#slide-img-box").css("transform", "translateX(-50%)");
-          $("#slide-desc-box").css("transform", "translateX(-50%)");
-          $("#player-operater-state-bar").css("width", "75%");
-          $("#play-time").html("2:51");
-          NowPicture = 3;
-        }
-      });
-
-      $("#slide-start-bt").click(function () {
-        $("#slide-img-box").css("transform", "translateX(0)");
-        $("#slide-desc-box").css("transform", "translateX(0)");
-        $("#player-operater-state-bar").css("width", "90px");
-        $("#play-time").html("0:57");
-        NowPicture = 1;
-      });
-
-      $("#slide-end-bt").click(function () {
-        $("#slide-img-box").css("transform", "translateX(-75%)");
-        $("#slide-desc-box").css("transform", "translateX(-75%)");
-        $("#player-operater-state-bar").css("width", "100%");
-        $("#play-time").html("3:48");
-        NowPicture = 4;
-      });
-
-      $(window).scroll(function () {
-        let height = $(window).scrollTop();
-        var y = (-1 / 200) * height + 6 / 2;
-        var z = (-1 / 2000) * height + 11 / 10;
-        $(".self-introduction").css("opacity", y);
-        $(".self-introduction").css("transform", `scale(${z})`);
-      });
-
-      $(window).scroll(function () {
-        let height = $(window).scrollTop();
-        var y = (-1 / 200) * height + 650 / 100;
-        var z = (-1 / 2000) * height + 145 / 100;
-        $(".skill").css("opacity", y);
-        $(".skill").css("transform", `scale(${z})`);
-      });
-
-      $(window).scroll(function () {
-        let height = $(window).scrollTop();
-        var y = (-1 / 200) * height + 1000 / 100;
-        var z = (-1 / 2000) * height + 180 / 100;
-        $(".banner").css("opacity", y);
-        $(".banner").css("transform", `scale(${z})`);
-      });
-
-      $(window).scroll(function () {
-        let height = $(window).scrollTop();
-        var y = (-1 / 200) * height + 135 / 10;
-        var z = (-1 / 2000) * height + 215 / 100;
-        $(".footer").css("opacity", y);
-        $(".footer").css("transform", `scale(${z})`);
-      });
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="style.js"></script>
   </body>
 </html>
