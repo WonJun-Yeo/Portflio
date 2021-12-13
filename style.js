@@ -77,24 +77,31 @@ $("#slide-after-bt").click(function () {
     $("#slide-desc-box").css("transform", "translateX(-25%)");
     $("#player-operater-state-bar").css("width", "50%");
     $("#play-time").html("1:54");
+    $(".operater-play-bt").attr("href", "");
+    $(".operater-play-bt").attr("href", "./work/WJcoffee/index_main.html");
     NowPicture = 2;
   } else if (NowPicture == 2) {
     $("#slide-img-box").css("transform", "translateX(-50%)");
     $("#slide-desc-box").css("transform", "translateX(-50%)");
     $("#player-operater-state-bar").css("width", "75%");
     $("#play-time").html("2:51");
+    $(".operater-play-bt").attr("href", "");
+    $(".operater-play-bt").attr("href", "./work/blizzard/blizzard.html");
     NowPicture = 3;
   } else if (NowPicture == 3) {
     $("#slide-img-box").css("transform", "translateX(-75%)");
     $("#slide-desc-box").css("transform", "translateX(-75%)");
     $("#player-operater-state-bar").css("width", "100%");
     $("#play-time").html("3:48");
+    $(".operater-play-bt").attr("href", "");
     NowPicture = 4;
   } else if (NowPicture == 4) {
     $("#slide-img-box").css("transform", "translateX(0)");
     $("#slide-desc-box").css("transform", "translateX(0)");
     $("#player-operater-state-bar").css("width", "25%");
     $("#play-time").html("0:57");
+    $(".operater-play-bt").attr("href", "");
+    $(".operater-play-bt").attr("href", "./work/IKEAKOREA/index.html");
     NowPicture = 1;
   }
 });
@@ -105,24 +112,31 @@ $("#slide-before-bt").click(function () {
     $("#slide-desc-box").css("transform", "translateX(-75%)");
     $("#player-operater-state-bar").css("width", "100%");
     $("#play-time").html("3:48");
+    $(".operater-play-bt").attr("href", "");
     NowPicture = 4;
   } else if (NowPicture == 2) {
     $("#slide-img-box").css("transform", "translateX(0)");
     $("#slide-desc-box").css("transform", "translateX(0)");
     $("#player-operater-state-bar").css("width", "25%");
     $("#play-time").html("0:57");
+    $(".operater-play-bt").attr("href", "");
+    $(".operater-play-bt").attr("href", "./work/IKEAKOREA/index.html");
     NowPicture = 1;
   } else if (NowPicture == 3) {
     $("#slide-img-box").css("transform", "translateX(-25%)");
     $("#slide-desc-box").css("transform", "translateX(-25%)");
     $("#player-operater-state-bar").css("width", "50%");
     $("#play-time").html("1:54");
+    $(".operater-play-bt").attr("href", "");
+    $(".operater-play-bt").attr("href", "./work/WJcoffee/index_main.html");
     NowPicture = 2;
   } else if (NowPicture == 4) {
     $("#slide-img-box").css("transform", "translateX(-50%)");
     $("#slide-desc-box").css("transform", "translateX(-50%)");
     $("#player-operater-state-bar").css("width", "75%");
     $("#play-time").html("2:51");
+    $(".operater-play-bt").attr("href", "");
+    $(".operater-play-bt").attr("href", "./work/blizzard/blizzard.html");
     NowPicture = 3;
   }
 });
@@ -132,6 +146,8 @@ $("#slide-start-bt").click(function () {
   $("#slide-desc-box").css("transform", "translateX(0)");
   $("#player-operater-state-bar").css("width", "90px");
   $("#play-time").html("0:57");
+  $(".operater-play-bt").attr("href", "");
+  $(".operater-play-bt").attr("href", "./work/IKEAKOREA/index.html");
   NowPicture = 1;
 });
 
@@ -140,7 +156,19 @@ $("#slide-end-bt").click(function () {
   $("#slide-desc-box").css("transform", "translateX(-75%)");
   $("#player-operater-state-bar").css("width", "100%");
   $("#play-time").html("3:48");
+  $(".operater-play-bt").attr("href", "");
   NowPicture = 4;
+});
+
+$(".operater-play-bt").on("click", function (a) {
+  if (NowPicture == 4) {
+    a.preventDefault();
+    $(".player-alert-box").css("display", "flex");
+  }
+});
+
+$(".player-alert-close").on("click", function () {
+  $(".player-alert-box").css("display", "none");
 });
 
 $(window).scroll(function () {

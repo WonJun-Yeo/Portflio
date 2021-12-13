@@ -560,7 +560,7 @@ textarea:active {
   transform: translateX(-50%);
   font-size: 1.5rem;
   z-index: 1;
-  color: #fddd93;
+  color: #fca70a;
   background-color: #fffaee;
   border-radius: 64px;
   padding: 0 10px;
@@ -652,6 +652,41 @@ textarea:active {
   color: rgba(0, 0, 0, 0.5);
 }
 
+.player-alert-box {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.player-alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  height: 150px;
+  background-color: #fffdf8;
+  border-radius: 16px;
+}
+.player-alert p {
+  margin-bottom: 20px;
+}
+
+.player-alert-close {
+  padding: 10px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+}
+
 .player-slide {
   display: flex;
   flex-direction: column;
@@ -685,7 +720,7 @@ textarea:active {
   float: left;
   width: 25%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 16px;
 }
 
@@ -901,7 +936,7 @@ footer {
 }
 
 .footer-info-list-item-hover-1:hover > .icon {
-  color: rgb(207, 190, 30);
+  color: rgb(245, 229, 89);
   border: 1px solid rgb(138, 126, 19);
 }
 

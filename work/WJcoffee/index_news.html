@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style_news.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/518dea5592.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>News</title>
+  </head>
+  <body>
+    <div class="header-wraper">
+      <header>
+        <a href="./index_main.html"
+          ><img src="./assets/logo.png" alt="Logo" class="header-img"
+        /></a>
+        <ul class="header-login">
+          <li class="header-login-list"><a href="#">Login</a></li>
+          <li class="header-login-list"><a href="#">Join</a></li>
+          <li class="header-login-list"><a href="#">Contact us</a></li>
+          <li class="header-login-list"><a href="#">Recruit</a></li>
+          <li class="header-login-list"><a href="#">FAQ</a></li>
+        </ul>
+        <ul class="inquiry">
+          <li class="inquiry-list">
+            <a href="#"><i class="fas fa-handshake"></i>신규입점제의</a>
+          </li>
+          <li class="inquiry-list">
+            <a href="#"><i class="fas fa-coffee"></i>남품문의</a>
+          </li>
+        </ul>
+        <div class="header-list-wraper">
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a href="./index_about.html">ABOUT US</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index_menu.html">MENU</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index_store.html">STORE</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index_friends.html">FRIENDS</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index_news.html">NEWS</a>
+            </li>
+            <li class="header-list-item">
+              <a href="./index_farm.html">FARM TO CUP</a>
+            </li>
+          </ul>
+          <ul class="header-hover-list">
+            <li class="header-hover-list-item">
+              <a href="./index_about.html">Brand</a
+              ><a href="./index_about.html">Franchise</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="./index_menu.html">Coffee</a
+              ><a href="./index_menu.html">Bread &amp; Dessert</a
+              ><a href="./index_menu.html">Seasonal Drink</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="./index_store.html">매장찾기</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="./index_friends.html">Dolpin Benefits</a
+              ><a href="./index_friends.html">W.J 카드</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="./index_news.html">Event</a
+              ><a href="./index_news.html">Notice</a>
+            </li>
+            <li class="header-hover-list-item">
+              <a href="./index_farm.html">Process</a
+              ><a href="./index_farm.html">Sample</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="mark-menu">
+        <button type="button" id="dropdown">
+          <img src="./assets/logo.png" alt="" class="mark-menu-header-img" />
+        </button>
+        <ol class="mark-menu-list">
+          <li class="mark-menu-list-header">
+            <div><a href="#">LOGIN</a></div>
+            <div><a href="#">JOIN</a></div>
+          </li>
+          <li class="mark-menu-list-item"><a href="#">ABOUT US</a></li>
+          <li class="mark-menu-list-item"><a href="#">MENU</a></li>
+          <li class="mark-menu-list-item"><a href="#">STORE</a></li>
+          <li class="mark-menu-list-item"><a href="#">FRIENDS</a></li>
+          <li class="mark-menu-list-item"><a href="#">NEWS</a></li>
+          <li class="mark-menu-list-item"><a href="#">FARM TO CUP</a></li>
+        </ol>
+      </div>
+    </div>
+    <div class="banner-wraper">
+      <section class="banner">
+        <img src="./assets/News/banner-img.webp" alt="" class="banner-img" />
+        <h1 class="banner-title">NEWS</h1>
+        <p class="banner-desc">새로운 W.J coffee의 소식을 알아보세요!</p>
+      </section>
+    </div>
+    <div class="division-wraper"><div class="division"></div></div>
+    <div class="search">
+      <h1 class="search-title">검색</h1>
+      <form action="#" method="POST">
+        <select name="검색요소" id="elements">
+          <option value="all">전체</option>
+          <option value="title">제목</option>
+          <option value="desc">내용</option>
+        </select>
+        <input type="text" placeholder="제목 또는 내용을 입력하세요." />
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+    <div class="search-result">
+      <h1 class="search-result-title">총 0개의 검색 결과가 있습니다.</h1>
+      <ul class="search-result-list">
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>번호</h1>
+            <h2>제목</h2>
+            <h3>날짜</h3>
+            <h4>조회수</h4>
+          </a>
+        </li>
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>공지</h1>
+            <h2>시즌 음료 미판매점 안내</h2>
+            <h3>2021.10.24</h3>
+            <h4>0</h4>
+          </a>
+        </li>
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>공지</h1>
+            <h2>W.J coffee 음료별 카페인 함량 안내</h2>
+            <h3>2021.10.24</h3>
+            <h4>0</h4>
+          </a>
+        </li>
+        <li class="search-result-list-item">
+          <a href="#"
+            ><h1>공지</h1>
+            <h2>membership 정책 개편 안내</h2>
+            <h3>2021.10.19</h3>
+            <h4>0</h4></a
+          >
+        </li>
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>공지</h1>
+            <h2>W.J coffee 홈페이지 개인정보처리방침 변경 안내</h2>
+            <h3>2021.10.18</h3>
+            <h4>0</h4>
+          </a>
+        </li>
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>5</h1>
+            <h2>10월 12일, 2021 할로윈 펌킨 카드 출시</h2>
+            <h3>2021.10.07</h3>
+            <h4>0</h4>
+          </a>
+        </li>
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>4</h1>
+            <h2>9월 29일 저녁 8시, W.J coffee 신메뉴 출시 라이브</h2>
+            <h3>2021.09.22</h3>
+            <h4>0</h4>
+          </a>
+        </li>
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>3</h1>
+            <h2>9월 15일, 제주 담은 겨울 음료 출시</h2>
+            <h3>2021.09.08</h3>
+            <h4>0</h4>
+          </a>
+        </li>
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>2</h1>
+            <h2>W.J coffee 메뉴 기프티카드 선물 이벤트</h2>
+            <h3>2021.09.06</h3>
+            <h4>0</h4>
+          </a>
+        </li>
+        <li class="search-result-list-item">
+          <a href="#">
+            <h1>1</h1>
+            <h2>W.J coffee 홈페이지 오픈 기념 무료 커피 증정 이벤트</h2>
+            <h3>2021.09.01</h3>
+            <h4>0</h4>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page">
+      <ul class="page-list">
+        <li class="page-list-item">
+          <a href="#"><i class="fas fa-angle-double-left"></i></a>
+        </li class="page-list-item">
+        <li class="page-list-item">
+          <a href="#"><i class="fas fa-angle-left"></i></a>
+        </li class="page-list-item">
+        <li><a href="#">1</a></li>
+        <li class="page-list-item">
+          <a href="#"><i class="fas fa-angle-right"></i></a>
+        </li>
+        <li class="page-list-item">
+          <a href="#"><i class="fas fa-angle-double-right"></i></a>
+        </li>
+      </ul>
+      <img src="./assets/logo.png" alt="logo" class="page-logo">
+    </div>
+    <footer>
+      <ul class="footer-deail-info">
+        <li class="footer-deail-info-list"><a href="#">개인정보처리방침</a></li>
+        <li class="footer-deail-info-list"><a href="#">서비스이용약관</a></li>
+        <li class="footer-deail-info-list"><a href="#">멤버십이용약관</a></li>
+        <li class="footer-deail-info-list">
+          <a href="#">WJcofee카드이용약관</a>
+        </li>
+        <li class="footer-deail-info-list"><a href="#">고객문의</a></li>
+        <li class="footer-deail-info-list"><a href="#">고객설문</a></li>
+        <li class="footer-deail-info-list"><a href="#">사이트맵</a></li>
+      </ul>
+      <ul class="footer-comp-info">
+        <li class="footer-comp-info-list">
+          법인명: (주) WJcoffe 대표자: 여원준 사업자등록번호 0000-00000-0000000
+        </li>
+        <li class="footer-comp-info-list">
+          주소 : 서울특별시 종로구 0000-0000 대표전화 : 010-9033-6633 (가맹문의
+          : 010-9033-6633)
+        </li>
+        <li class="footer-comp-info-list">
+          COPYRIGHT (C) KG W.J F&B. All Rights Reserved
+        </li>
+      </ul>
+      <ul class="footer-sns">
+        <li class="footer-sns-list">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li class="footer-sns-list">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="footer-sns-list">
+          <a href="#"><i class="fas fa-sms"></i></a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      let isShow = true;
+      document
+        .getElementById("dropdown")
+        .addEventListener("click", function () {
+          if (isShow) {
+            document.querySelector(".mark-menu-list").classList.add("active");
+            isShow = false;
+          } else {
+            document
+              .querySelector(".mark-menu-list")
+              .classList.remove("active");
+            isShow = true;
+          }
+        });
+    </script>
+  </body>
+</html>
