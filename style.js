@@ -1,17 +1,23 @@
+var AboutOffset = $(".self-introduction").offset();
+var SkillOffset = $(".skill").offset();
+var BannerOffset = $(".banner").offset();
+var FooterOffset = $(".footer").offset();
+
 $(".UpToHeader").on("click", function () {
-  $(window).scrollTop(0);
+  $(window).scrollTop($(".header").scrollTop());
 });
 $("#ABOUT").on("click", function () {
-  $(window).scrollTop(0);
+  $("html").animate({ scrollTop: AboutOffset.top }, 50);
 });
 $("#SKILL").on("click", function () {
-  $(window).scrollTop(800);
+  $("html").animate({ scrollTop: SkillOffset.top }, 50);
 });
+
 $("#WORK").on("click", function () {
-  $(window).scrollTop(1500);
+  $("html").animate({ scrollTop: BannerOffset.top }, 50);
 });
 $("#CONTACT").on("click", function () {
-  $(window).scrollTop(2400);
+  $("html").animate({ scrollTop: FooterOffset.top }, 50);
 });
 
 $(window).on("scroll", function () {
@@ -173,32 +179,32 @@ $(".player-alert-close").on("click", function () {
 
 $(window).scroll(function () {
   let height = $(window).scrollTop();
-  var y = (-1 / 200) * height + 6 / 2;
-  var z = (-1 / 2000) * height + 11 / 10;
+  let y = (-1 / 200) * height + 6 / 2;
+  let z = (-1 / 2000) * height + 11 / 10;
   $(".self-introduction").css("opacity", y);
   $(".self-introduction").css("transform", `scale(${z})`);
 });
 
 $(window).scroll(function () {
   let height = $(window).scrollTop();
-  var y = (-1 / 200) * height + 650 / 100;
-  var z = (-1 / 2000) * height + 145 / 100;
+  let y = (-1 / 200) * height + 650 / 100;
+  let z = (-1 / 2000) * height + 145 / 100;
   $(".skill").css("opacity", y);
   $(".skill").css("transform", `scale(${z})`);
 });
 
 $(window).scroll(function () {
   let height = $(window).scrollTop();
-  var y = (-1 / 200) * height + 1000 / 100;
-  var z = (-1 / 2000) * height + 180 / 100;
+  let y = (-1 / 200) * height + 1000 / 100;
+  let z = (-1 / 2000) * height + 180 / 100;
   $(".banner").css("opacity", y);
   $(".banner").css("transform", `scale(${z})`);
 });
 
 $(window).scroll(function () {
   let height = $(window).scrollTop();
-  var y = (-1 / 200) * height + 135 / 10;
-  var z = (-1 / 2000) * height + 215 / 100;
+  let y = (-1 / 200) * height + 135 / 10;
+  let z = (-1 / 2000) * height + 215 / 100;
   $(".footer").css("opacity", y);
   $(".footer").css("transform", `scale(${z})`);
 });
