@@ -1,3 +1,0 @@
-self-introduction 짧은 소개 2줄 추가
-skill, player 설명 변경
-
