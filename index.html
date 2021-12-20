@@ -20,7 +20,7 @@
       <div class="box">
         <div class="clock"></div>
         <p>Loading</p>
-        <div>본 페이지는 DeskTop 환경과 구글 크롬에 최적화되어 있습니다.</div>
+        <div>본 페이지는 구글 크롬에 최적화되어 있습니다.</div>
       </div>
     </div>
     <div class="main-wraper">
@@ -31,13 +31,25 @@
           <li class="menu-list-item"><button id="SKILL">SKILL</button></li>
           <li class="menu-list-item"><button id="WORK">WORK</button></li>
           <li class="menu-list-item"><button id="CONTACT">CONTACT</button></li>
+          <li class="menu-list-item hamberger">
+            <button>
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="hamberger-list">
+              <li><button id="ham-ABOUT">ABOUT</button></li>
+              <li><button id="ham-SKILL">SKILL</button></li>
+              <li><button id="ham-WORK">WORK</button></li>
+              <li><button id="ham-CONTACT">CONTACT</button></li>
+            </ul>
+          </li>
         </ul>
       </header>
       <section class="section-notice">
         <span id="section-notice">ABOUT</span>
       </section>
-      <section class="self-introduction" id="ABOUT">
+      <section class="self-introduction">
         <div class="self-introduction-box">
+          <span class="section-nav-tablet">ABOUT</span>
           <img src="./assets/profile.jpg" alt="프로필사진" />
           <div class="paragraph">
             <h2>안녕하세요! 저는</h2>
@@ -67,6 +79,7 @@
       </section>
       <section class="skill">
         <div class="skill-box">
+          <span class="section-nav-tablet">SKILL</span>
           <h1 class="skill-title">
             저는 이런 것들을 잘하고 발전을 위해 계속 공부 중입니다.
           </h1>
@@ -155,6 +168,7 @@
       </section>
       <section class="banner" id="WORK">
         <div class="banner-box">
+          <span class="section-nav-tablet">WORK</span>
           <div class="appeal">
             <h1 class="appeal-title">골라보는 재미! CODING PLAYER</h1>
           </div>
@@ -290,11 +304,10 @@
                       설명 :
                       <p>
                         HTML, CSS 공부 후 처음으로 만든 클론 코딩
-                        홈페이지입니다. 최초로 완성되었을 때에는 간단한
+                        홈페이지입니다. 최초 완성시에는 간단한
                         animation 및 User Action Pesudo-Classes 를 이용해
                         작성되었으나, 이 후 JQuery 를 공부하고 습득하여 동적인
-                        요소를 추가, grid ststem 을 이용한 배치를 추가한
-                        홈페이지입니다.
+                        요소를 추가, grid ststem 을 이용한 배치를 추가하였습니다.
                       </p>
                     </li>
                   </ul>
@@ -310,12 +323,9 @@
                     <li>
                       설명 :
                       <p>
-                        '내가 카페 사장이라면', '내가 카페 홈페이지 이용자라면'
-                        이라는 상상으로 시작해 제작한 홈페이지입니다. JQuery로
+                        '내가 카페 사장이라면' 이라는 상상으로 시작되어 제작된 홈페이지입니다. JQuery로
                         대부분의 동적 요소를 구현하였으며, JQuery로 구현이
-                        어려운 동적 요소는 JavaScipt로 구현하였습니다. 각
-                        페이지의 디자인 및 요소는 현재 존재하는 여러 카페들의
-                        홈페이지로부터 영감을 받았습니다.
+                        어려운 동적 요소는 JavaScipt로 구현하였습니다.
                       </p>
                     </li>
                   </ul>
@@ -359,6 +369,7 @@
       </section>
       <footer class="footer">
         <div class="footer-box">
+          <span class="section-nav-tablet">CONTACT</span>
           <h1 class="footer-title">
             제 포트폴리오를 끝까지 봐주셔서 감사합니다!
           </h1>

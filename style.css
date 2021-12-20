@@ -103,6 +103,7 @@ textarea:active {
   position: absolute;
   top: 0;
   width: 100%;
+  max-width: 1600px;
   height: 100vh;
   text-align: center;
   background-color: #fca70a;
@@ -214,14 +215,19 @@ textarea:active {
 }
 
 .main-wraper {
+  position: relative;
   width: 100%;
-  max-width: 1900px;
+  max-width: 1600px;
   margin: 0 auto;
   opacity: 0;
   animation-name: intro-appear;
   animation-duration: 1s;
   animation-delay: 2s;
   animation-fill-mode: forwards;
+}
+
+.hamberger {
+  display: none;
 }
 
 /* header */
@@ -232,7 +238,7 @@ textarea:active {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 1900px;
+  max-width: 1600px;
   color: #ccbac4;
   background-color: #6b799e;
   transition: all 1s ease;
@@ -312,7 +318,7 @@ textarea:active {
 .section-notice {
   position: fixed;
   width: 100%;
-  max-width: 1900px;
+  max-width: 1600px;
   margin: 0 auto;
   color: #fca70a;
   font-weight: 700;
@@ -335,12 +341,12 @@ textarea:active {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vh;
-  padding: 140px 0 100px;
+  height: 740px;
+  padding: 140px 0;
 }
 
 .self-introduction-box {
-  width: 80%;
+  width: 90%;
   height: 100%;
   border-radius: 64px;
   margin: 0 auto;
@@ -351,8 +357,18 @@ textarea:active {
   border: 1px solid #fca70a;
 }
 
+.section-nav-tablet {
+  width: 100%;
+  color: #fca70a;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 15px;
+  display: none;
+}
+
 .self-introduction img {
   width: 40%;
+  max-width: 450px;
   border-radius: 64px;
   object-fit: cover;
 }
@@ -385,7 +401,7 @@ textarea:active {
 
 @keyframes division {
   0% {
-    widht: 0;
+    width: 0;
   }
   100% {
     width: 60%;
@@ -458,12 +474,12 @@ textarea:active {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vh;
-  padding: 140px 0 100px;
+  height: 740px;
+  padding: 140px 0;
 }
 
 .skill-box {
-  width: 80%;
+  width: 90%;
   height: 100%;
   margin: 0 auto;
   border-radius: 64px;
@@ -540,8 +556,8 @@ textarea:active {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vh;
-  padding: 140px 0 100px;
+  height: 740px;
+  padding: 140px 0;
   display: flex;
   flex-direction: column;
   color: #111;
@@ -550,7 +566,7 @@ textarea:active {
 .banner-box {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   height: 100%;
   border-radius: 64px;
   background-color: rgb(245, 245, 245);
@@ -669,7 +685,7 @@ textarea:active {
   position: fixed;
   top: 0;
   width: 100%;
-  max-width: 1900px;
+  max-width: 1600px;
   height: 100%;
   margin: 0 auto;
   color: #111;
@@ -678,15 +694,14 @@ textarea:active {
 }
 
 .player-main {
-  display: flex;
   position: relative;
-  width: 90%;
-  max-width: 1440px;
+  display: flex;
+  width: 1440px;
   height: 700px;
   background-color: #fffdf8;
-  margin: 25px auto;
   border-radius: 16px;
   border: 1px solid #fca70a;
+  margin: auto;
 }
 
 .player-ani-box {
@@ -786,6 +801,7 @@ textarea:active {
   font-size: 40px;
   border-radius: 16px;
   color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
 }
 
 .player-alert-box {
@@ -828,10 +844,9 @@ textarea:active {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  width: 580px;
+  width:50%;
   min-width: 580px;
-  height: 100%;
-  padding: 80px 80px 30px;
+  padding: 80px 20px 40px 40px;
 }
 
 .player-slide-box {
@@ -976,7 +991,7 @@ li.operater-icon-list-end i {
 
 .player-desc-slide {
   height: 100%;
-  padding: 80px 50px 30px 0;
+  padding: 80px 40px 40px 20px;
 }
 
 .player-desc-box {
@@ -990,6 +1005,7 @@ li.operater-icon-list-end i {
   height: 100%;
   transform: translateX(0);
 }
+
 
 .slide-desc-lsit {
   display: flex;
@@ -1005,7 +1021,7 @@ li.operater-icon-list-end i {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 2;
   color: #fff;
@@ -1019,7 +1035,7 @@ li.operater-icon-list-end i {
   background-color: #fffdf8;
   color: #111;
   border-radius: 24px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .slide-desc-lsit-title {
@@ -1034,15 +1050,16 @@ footer {
   position: sticky;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 740px;
   font-size: 1rem;
   font-weight: 400;
   color: #fff;
-  padding: 140px 0 100px;
+  padding: 140px 0;
+  margin-bottom: 20px;;
 }
 
 .footer-box {
-  width: 80%;
+  width: 90%;
   height: 100%;
   border-radius: 64px;
   margin: 0 auto;
@@ -1132,7 +1149,7 @@ footer {
 .footer-ft span {
   font-size: 1.2rem;
   margin-top: 20px;
-  line-height: 5;
+  line-height: 3;
   color: #fca70a;
 }
 
@@ -1142,4 +1159,388 @@ footer {
   bottom: 30px;
   font-size: 0.8rem;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  
+/* self-introduction */
+
+
+.self-introduction img {
+  width: 35%;
+}
+
+.paragraph {
+  width: 65%;
+}
+
+.paragraph-division {
+  display: none;
+}
+
+.typing p {
+  font-size: 2rem;
+}
+
+.paragraph-title {
+  font-size: 3rem;
+}
+
+.paragraph-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.paragraph-list-item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.paragraph-list-item:nth-child(2) {
+  width: 100%;
+  padding-left: 0;
+}
+
+.paragraph-desc {
+  margin-top: 0;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+
+/* skill */
+
+.skill-list-item-title {
+  font-size: 1.2rem;
+}
+
+
+.skill-list-item {
+  line-height: 2;
+}
+
+
+.skill-list-item-desc {
+  font-size: 0.7rem;
+}
+
+
+/* banner */
+
+
+.banner-desc {
+  font-size: 0.8rem;
+}
+
+.banner-manual-list {
+  font-size: 0.8rem;
+  padding: 10px 0 30px;
+  white-space:normal;
+}
+
+.banner-manual-title {
+  font-size: 1rem;
+}
+
+/* footer */
+
+.footer-info-list-item h1 {
+  font-size: 1.2rem;
+}
+
+
+.footer-info-list-item p {
+  font-size: 0.8rem;
+}
+
+.footer-ft span {
+  font-size: 1rem;
+}
+
+.page-desc {
+  font-size: 0.8rem;
+}
+}
+
+@media screen and (max-width:1000px) {
+
+
+/* footer */
+
+.footer-info-list-item p {
+  font-size: 0.5rem;
+}
+
+}
+
+@media  screen and (max-width:768px) {
+.menu-list-item {
+  display: none;
+}
+
+.UpToHeader {
+  order: 2;
+}
+  
+.hamberger {
+  display: block;
+  position: relative;
+}
+
+.hamberger-list {
+  position: absolute;
+  top: 71.5px;
+  left: -10px;
+  padding: 0 10px;
+  background-color: #6b799e;
+  display: none;
+  text-align: center;
+}
+
+.hamberger-list button {
+  width: 100%;
+}
+
+.hamberger-list button:hover {
+  color: #fca70a;
+}
+
+.hamberger-list.active {
+  background-color: rgba(107, 121, 158, 0.5);
+}
+
+.section-notice {
+  display: none;
+}
+
+/* self-introduction */
+
+.self-introduction {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 140px 0 70px;
+  border: 2px solid #6b799e;
+}
+
+.self-introduction-box {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: inherit;
+  border: 0;
+}
+
+.section-nav-tablet {
+  display: block;
+}
+
+.self-introduction img {
+  width: 50%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.paragraph {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  padding-left: 0;
+  text-align: center;
+}
+
+.typing {
+  margin: 0 auto;
+}
+
+.paragraph-title {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.paragraph-list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+.paragraph-list-item {
+  font-size: 0.8rem;
+  width: 40%;
+}
+.paragraph-list-item:nth-child(2) {
+  width: 60%;
+  padding-left: 10px;
+}
+
+.paragraph-list-item h1 {
+  font-size: 1.2rem;
+}
+
+.paragraph-desc {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+
+/* skill */
+
+.skill {
+  position: relative;
+  height: auto;
+  padding: 70px 0;
+  border: 2px solid #6b799e;
+}
+
+.skill-box {
+  width: 100%;
+  padding: 0;
+  background-color: inherit;
+  border: 0;
+}
+
+.skill-title {
+  margin-bottom: 15px;
+}
+
+.skill-list {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.skill-list-item {
+  float: left;
+  width: 50%;
+}
+
+.skill-list-item-title p {
+  position: relative;
+}
+
+
+.skill-list-item-img {
+  height: 100px;
+  margin: 0 auto 10px;
+  padding: 10px;
+}
+
+.skill-list-item-desc {
+  margin-bottom: 15px;
+}
+
+/* banner */
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 70px 0;
+  border: 2px solid #6b799e;
+}
+
+.banner-box {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.banner-main {
+  flex-direction: column;
+}
+
+.banner-paragraph {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+
+
+.banner-manual {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: contain;
+  padding: 30px;
+}
+
+
+/* footer */
+
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 70px 0 0;
+  border: 2px solid #6b799e;
+}
+
+.footer-box {
+  width: 100%;
+  background-color: inherit;
+  border: 0;
+  padding: 0;
+}
+
+.footer-info-list {
+  display: block;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.footer-info-list-item {
+  width: 50%;
+  float: left;
+}
+
+.footer-ft {
+  font-size: 0.8rem;
+}
+
+.footer-ft span {
+  font-size: 0.8rem;
+}
+
+.page-desc {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+}
+
+@media  screen and (max-width:576px) {
+  .paragraph-list {
+    display: none;
+  }
+
+  .paragraph-desc {
+    margin-top: 15px;
+    font-size: 0.7rem;
+    font-weight: 400;
+  }
+
+.banner-manual {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position-x: top;
+  background-size: cover;
+  padding:50px;
+}
 }
