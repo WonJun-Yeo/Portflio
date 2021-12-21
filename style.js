@@ -82,8 +82,17 @@ $(".UpToHeader").hover(
 );
 
 $("#banner-link").on("click", function () {
-  $("#player").fadeIn();
+  var WinWidth = $(window).width();
+  if (WinWidth < 1440) {
+    $('.play-bt-alert').fadeIn();
+  } else {
+    $("#player").fadeIn();
+  }
 });
+
+$('.play-bt-alert-desc-close').on('click', function(){
+  $('.play-bt-alert').fadeOut();
+})
 
 $("#player-close").on("click", function () {
   $("#player").fadeOut();
