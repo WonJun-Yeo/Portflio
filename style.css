@@ -1,18 +1,25 @@
+@font-face {
+  font-family: Avenir;
+  src: url(./assets/fonts/Avenir\ Roman.otf);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
-  font-family: "Noto Sans", sans-serif;
+  font-family: Avenir;
   word-break: keep-all;
   scroll-behavior: smooth;
+  
 }
 
 body {
   position: relative;
   overflow-x: hidden;
   background: linear-gradient(#fff, #6b799e);
+  
 }
 
 body::-webkit-scrollbar {
