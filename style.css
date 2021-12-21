@@ -743,7 +743,7 @@ textarea:active {
 .player-main {
   position: relative;
   display: flex;
-  width: 1440px;
+  width: 1100px;
   height: 700px;
   background-color: #fffdf8;
   border-radius: 16px;

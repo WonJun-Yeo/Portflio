@@ -83,7 +83,7 @@ $(".UpToHeader").hover(
 
 $("#banner-link").on("click", function () {
   var WinWidth = $(window).width();
-  if (WinWidth < 1440) {
+  if (WinWidth < 1200) {
     $('.play-bt-alert').fadeIn();
   } else {
     $("#player").fadeIn();
