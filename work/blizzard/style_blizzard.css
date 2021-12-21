@@ -367,6 +367,10 @@ textarea:active {
   color: rgb(0, 174, 255);
 }
 
+.game-buy:hover {
+  color: #fff;
+}
+
 .container-fluid {
   width: 100%;
   max-width: 1600px;
@@ -662,6 +666,7 @@ textarea:active {
   justify-content: space-between;
   width: 100%;
   max-width: 1600px;
+  font-size: 0.8rem;
   margin: 0 auto;
   padding: 56px;
 }
